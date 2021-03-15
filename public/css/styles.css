@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  
+}
+
+body {
+  background-color: gray;
+  margin: 0 auto;
+}
+
+
+#wrapper {
+  margin: 0 auto;
+  width: 1120px;
+  height: 100%;
+}
+
+/*header css*/
+
+#masthead {
+  padding: 10px;
+  background-color: white;
+}
+
+#header-img {
+  background-image: url(../img/ff14-fc-desk.png);
+  background-position: center;
+}
+
+#header-title {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+  line-height: 5px;
+}
+
+#header-title a {
+  text-decoration: none;
+  color: white;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  padding: 10px
+}
+
+header nav ul {
+  margin: 0;
+  position: relative;
+  background-color: #504741;
+  list-style: none;
+  text-align: center;
+}
+
+header nav li {
+  display: inline;
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+header nav a:hover {
+  background-color: #282828;
+}
+
+
+header nav li a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav .current {
+  background-color: #282828;
+}
+
+/* End header css */
+
+/* content top */
+#content-top {
+  background-image: url(../img/wooden-bg.jpg);
+  background-position:top
+}
+
+#content-wrapper {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+#content-top-text {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px
+}
+
+/* Page Img */
+#page-img-wrapper {
+  padding: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+#main {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #504741;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.section div {
+  align-self: center;
+  text-align: center;
+  margin: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
