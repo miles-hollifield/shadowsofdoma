@@ -9,7 +9,11 @@
             <li><a href="staff.php">Meet Our Staff</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="roster.php">Roster</a></li>
+            <?php if($session->is_logged_in()) { ?>
+            <li><a href="account.php">Hello, <?php echo $admin->user_name; ?></a></li>
+            <?php } else { ?>
             <li><a href="login.php">Log in/Register</a></li>
+            <?php } ?>
           </ul>
         </nav>
       </header>

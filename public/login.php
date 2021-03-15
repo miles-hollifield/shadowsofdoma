@@ -20,30 +20,30 @@
             <?php
 
             $errors = [];
-            $user_email = '';
-            $user_password = '';
+            $user_name = '';
+            $password = '';
 
             if(is_post_request()) {
 
-              $user_email = $_POST['user_email'] ?? '';
-              $user_password = $_POST['user_password'] ?? '';
+              $user_name = $_POST['user_name'] ?? '';
+              $password = $_POST['password'] ?? '';
 
               // Validations
-              if(is_blank($user_email)) {
+              if(is_blank($user_name)) {
                 $errors[] = "Username cannot be blank.";
               }
-              if(is_blank($user_password)) {
+              if(is_blank($password)) {
                 $errors[] = "Password cannot be blank.";
               }
 
               // if there were no errors, try to login
               if(empty($errors)) {
-                $admin = Admin::find_by_username($user_email);
+                $admin = Admin::find_by_username($user_name);
                 // test if admin found and password is correct
-                if($admin != false && $admin->verify_password($user_password)) {
+                if($admin != false && $admin->verify_password($password)) {
                   // Mark admin as logged in
                   $session->login($admin);
-                  redirect_to(url_for('about.html'));
+                  redirect_to(url_for('index.php'));
                 } else {
                   // username not found or password does not match
                   $errors[] = "Log in was unsuccessful.";
@@ -62,7 +62,7 @@
 
               <form action="login.php" method="post">
                 Username:<br />
-                <input type="text" name="user_email" value="<?php echo h($user_email); ?>" /><br />
+                <input type="text" name="user_name" value="<?php echo h($user_name); ?>" /><br />
                 Password:<br />
                 <input type="password" name="password" value="" /><br />
                 <input type="submit" name="submit" value="Submit"  />

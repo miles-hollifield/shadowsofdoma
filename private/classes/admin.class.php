@@ -3,6 +3,7 @@
 class Admin extends DatabaseObject {
 
   static protected $table_name = "user";
+  static protected $id_name = 'user_id';
   static protected $db_columns = ['user_id', 'user_first_name', 'user_last_name', 'user_email', 'user_name', 'user_hashed_password', 'user_level'];
 
   public $user_id;
@@ -34,12 +35,12 @@ class Admin extends DatabaseObject {
     return password_verify($password, $this->user_hashed_password);
   }
 
-  protected function create() {
+  public function create() {
     $this->set_hashed_password();
     return parent::create();
   }
 
-  protected function update() {
+  public function update() {
     if($this->password != '') {
       // validate password
       $this->set_hashed_password();
@@ -106,7 +107,7 @@ class Admin extends DatabaseObject {
     return $this->errors;
   }
 
-  static public function find_by_username($username) {
+  static public function find_by_username($user_name) {
     $sql = "SELECT * FROM " . static::$table_name . " ";
     $sql .= "WHERE user_name=" . self::$database->quote($user_name);
     $object_array = static::find_by_sql($sql);

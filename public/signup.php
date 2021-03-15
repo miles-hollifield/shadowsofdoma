@@ -28,8 +28,8 @@
 
               if($result === true) {
                 $session->login($admin);
-                $session->message('Welcome to Shadows!');
-                redirect_to(url_for('index.html'));
+                $session->message('Welcome to Shadows of Doma!');
+                redirect_to(url_for('index.php'));
               } else {
                 // show errors
               }
@@ -59,12 +59,12 @@
 
               <div>
                 <label for="email">Email:</label>
-                <input type="text" id="user_email" name="admin[user_email_address]" value="<?php echo h($admin->user_email); ?>">
+                <input type="text" id="user_email" name="admin[user_email]" value="<?php echo h($admin->user_email); ?>">
               </div>
 
               <div>
                 <label for="username">Username:</label>
-                <input type="text" id="user_name" name="admin[user_username]" value="<?php echo h($admin->user_name); ?>">
+                <input type="text" id="user_name" name="admin[user_name]" value="<?php echo h($admin->user_name); ?>">
               </div>
 
               <div>

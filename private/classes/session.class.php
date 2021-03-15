@@ -3,7 +3,7 @@
 class Session {
 
   private $admin_id;
-  public $username;
+  public $user_name;
   public $user_level;
   private $last_login;
 
@@ -15,7 +15,7 @@ class Session {
   }
   
   public function get_username() {
-    return $this->username;
+    return $this->user_name;
   }
 
   public function login($admin) {
@@ -23,7 +23,7 @@ class Session {
       // prevent session fixation attacks
       session_regenerate_id();
       $this->admin_id = $_SESSION['user_id'] = $admin->id;
-      $this->username = $_SESSION['user_name'] = $admin->username;
+      $this->user_name = $_SESSION['user_name'] = $admin->user_name;
       $this->user_level = $_SESSION['user_level'] = $admin->user_level;
       $this->last_login = $_SESSION['last_login'] = time();
     }
@@ -49,7 +49,7 @@ class Session {
     unset($_SESSION['user_level']);
     unset($_SESSION['last_login']);
     unset($this->admin_id);
-    unset($this->username);
+    unset($this->user_name);
     unset($this->user_level);
     unset($this->last_login);
     return true;
