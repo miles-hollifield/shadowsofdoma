@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Shadows of Doma - FFXIV Free Company</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+    <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
+    <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
