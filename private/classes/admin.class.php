@@ -2,7 +2,7 @@
 
 class Admin extends DatabaseObject {
 
-  static protected $table_name = "user";
+  static protected $table_name = 'user';
   static protected $id_name = 'user_id';
   static protected $db_columns = ['user_id', 'user_first_name', 'user_last_name', 'user_email', 'user_name', 'user_hashed_password', 'user_level'];
 
@@ -78,7 +78,7 @@ class Admin extends DatabaseObject {
       $this->errors[] = "Username cannot be blank.";
     } elseif (!has_length($this->user_name, array('min' => 8, 'max' => 255))) {
       $this->errors[] = "Username must be between 8 and 255 characters.";
-    } elseif (!has_unique_username($this->user_name, $this->id ?? 0)) {
+    } elseif (!has_unique_username($this->user_name, $this->user_id ?? 0)) {
       $this->errors[] = "Username not allowed. Try another.";
     }
   

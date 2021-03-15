@@ -1,5 +1,5 @@
 <?php
-  //require_login();
+  require_login();
 ?>
 
 
@@ -26,7 +26,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="../../public/member/index.php">About Us</a></li>
+            <li><a href="../../public/member/about.php">About Us</a></li>
             <li><a href="../../public/member/staff.php">Meet Our Staff</a></li>
             <li><a href="../../public/member/gallery.php">Gallery</a></li>
             <li><a href="../../public/member/roster.php">Roster</a></li>

@@ -124,7 +124,7 @@ class DatabaseObject {
   // Properties which have database columns excluding ID
   public function attributes() {
     $attributes = [];
-    foreach(static::$db_columns as $column) {
+    foreach(static::$columns as $column) {
         if( $column == static::$id_name ) { continue; }
         $attributes[$column] = $this->$column;
     }

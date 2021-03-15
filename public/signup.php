@@ -18,7 +18,7 @@
               if($result === true) {
                 $session->login($admin);
                 $session->message('Welcome to Shadows of Doma!');
-                redirect_to(url_for('index.php'));
+                redirect_to(url_for('/member/index.php'));
               } else {
                 // show errors
               }

@@ -7,6 +7,7 @@
         <div id="content-top">
           <div id="content-top-text">
             <h1>Account</h1>
+            <button><a href="logout.php">Log Out</a></button>
           </div>
         </div>
       </div>

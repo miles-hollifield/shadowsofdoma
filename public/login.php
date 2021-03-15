@@ -1,6 +1,6 @@
 <?php
   require_once('../private/initialize.php');
-  //include(SHARED_PATH . '/public_header.php');
+  include(SHARED_PATH . '/public_header.php');
 ?>
       
       <div id="content-wrapper">
@@ -32,7 +32,7 @@
                 if($admin != false && $admin->verify_password($password)) {
                   // Mark admin as logged in
                   $session->login($admin);
-                  $session->message('Welcome ' . $username . ', you have successfully logged in.');
+                  $session->message('Welcome ' . $user_name . ', you have successfully logged in.');
                   redirect_to(url_for('/member/index.php'));
                 } else {
                   // username not found or password does not match
