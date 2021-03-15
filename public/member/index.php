@@ -6,7 +6,9 @@
       <div id="content-wrapper">
         <div id="content-top">
           <div id="content-top-text">
-            <?php if($session->is_logged_in()) { ?>
+            <?php if ($session->is_admin()) { ?>
+            <h1>Welcome Admin <?php echo $session->user_name; ?>!</h1>
+            <?php } else if ($session->is_logged_in()) { ?>
             <h1>Welcome <?php echo $session->user_name; ?>!</h1>
             <?php } ?>
             <p>For us, it’s more than just a game. It’s about the experiences we make along the way.</p>

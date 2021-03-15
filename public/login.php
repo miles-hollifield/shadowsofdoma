@@ -58,7 +58,8 @@
                 <input type="submit" name="submit" value="Submit"  />
               </form>
               
-              <p>Don't have an account? <a href="signup.php">Sign up here.</a></p>
+              <p>Don't have an account?<br>
+              <a id="signup-link" href="signup.php">Sign Up</a></p>
 
             </div>
           </div>

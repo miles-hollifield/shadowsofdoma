@@ -7,7 +7,7 @@
         <div id="content-top">
           <div id="content-top-text">
             <h1>Account</h1>
-            <button><a href="logout.php">Log Out</a></button>
+              <button class="button-style"><a class="button-link-style" href="logout.php">Log Out <?php echo $session->user_name; ?></a></button>
           </div>
         </div>
       </div>

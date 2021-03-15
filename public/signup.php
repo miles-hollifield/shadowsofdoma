@@ -66,7 +66,7 @@
                 <input type="password" id="confirm-pass" name="admin[confirm_password]" value="">
               </div>
 
-              <input type="submit" value="Sign Up">
+              <input class="button-style button-link-style" type="submit" value="Sign Up">
             </form>
           </div>
         </div>

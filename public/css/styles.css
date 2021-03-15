@@ -103,6 +103,23 @@ header nav .current {
   font-size: 20px
 }
 
+#signup-link {
+  color: white;
+}
+
+.button-style {
+  background-color: #504741;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.button-link-style {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
 /* Page Img */
 #page-img-wrapper {
   padding: 10px;
@@ -130,10 +147,6 @@ footer {
   text-align: center;
   margin: 2rem;
 }
-
-
-
-
 
 
 
