@@ -1,12 +1,12 @@
 <?php
-  require_once('../private/initialize.php');
-  //include(SHARED_PATH . '/member_header.php');
+  require_once('../../private/initialize.php');
+  include(SHARED_PATH . '../member_header.php');
 ?>
-    
+      
       <div id="content-wrapper">
         <div id="content-top">
           <div id="content-top-text">
-            <h1>Account</h1>
+            <h1>Gallery</h1>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <?php
-  require_once('../private/initialize.php');
-  //include(SHARED_PATH . '/member_header.php');
+  require_once('../../private/initialize.php');
+  include(SHARED_PATH . '../member_header.php');
 ?>
     
       <div id="content-wrapper">
