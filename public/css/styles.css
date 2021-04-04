@@ -78,7 +78,7 @@ header nav li a {
   text-decoration: none;
 }
 
-header nav .current {
+.current {
   background-color: #282828;
 }
 

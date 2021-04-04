@@ -1,5 +1,6 @@
 <?php
   require_once('../private/initialize.php');
+  $page = 'gallery';
   include(SHARED_PATH . '/public_header.php');
 ?>
       

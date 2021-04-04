@@ -7,6 +7,11 @@
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
   </head>
   <body>
+    <?php
+      if(!isset($page)) {
+        $page = '';
+      }
+    ?>
     <div id="wrapper">
      
       <header>
@@ -21,12 +26,12 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="staff.php">Meet Our Staff</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="roster.php">Roster</a></li>
-            <li><a href="login.php">Log in/Register</a></li>
+            <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="index.php">Home</a></li>
+            <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="about.php">About Us</a></li>
+            <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="staff.php">Meet Our Staff</a></li>
+            <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="gallery.php">Gallery</a></li>
+            <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="roster.php">Roster</a></li>
+            <li><a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a></li>
           </ul>
         </nav>
       </header>
