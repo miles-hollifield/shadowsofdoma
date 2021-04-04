@@ -26,11 +26,13 @@
         </div>
         <nav>
           <ul>
+            <li><a href="../../public/member/index.php">Home</a></li>
             <li><a href="../../public/member/about.php">About Us</a></li>
             <li><a href="../../public/member/staff.php">Meet Our Staff</a></li>
             <li><a href="../../public/member/gallery.php">Gallery</a></li>
             <li><a href="../../public/member/roster.php">Roster</a></li>
             <li><a href="../../public/member/account.php">Account</a></li>
+            <li><a href="../../public/member/logout.php">Log Out <?php echo $session->user_name; ?></a></li>
           </ul>
         </nav>
       </header>

@@ -21,6 +21,7 @@
         </div>
         <nav>
           <ul>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About Us</a></li>
             <li><a href="staff.php">Meet Our Staff</a></li>
             <li><a href="gallery.php">Gallery</a></li>
