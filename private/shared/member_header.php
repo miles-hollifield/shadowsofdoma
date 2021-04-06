@@ -20,7 +20,8 @@
             <a href="../../public/member/index.php"><img src="<?php echo url_for('/img/crest_white-e1601152867882.png'); ?>" alt="Crest" width="230" height="235"></a>
             <div id="header-title">
               <a href="../../public/member/index.php"><h1>SHADOWS OF DOMA</h1></a>
-              <a href="../../public/member/index.php"><p>FFXIV FREE COMPANY</p></a>
+              <a href="../../public/member/index.php"><p>FINAL FANTASY XIV</p></a>
+              <a href="../../public/member/index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
             </div>
           </div>
         </div>

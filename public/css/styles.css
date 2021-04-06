@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font: 16px 'Roboto Mono', monospace;
+}
+
 body {
   background-color: gray;
   margin: 0 auto;
-  font-family: 'Roboto Mono', monospace;
 }
 
 #wrapper {
@@ -63,7 +66,7 @@ header nav ul {
 
 header nav li {
   display: inline;
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px;
 }
 
@@ -101,7 +104,12 @@ header nav li a {
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 20px
+}
+
+#content-top-text p {
+  max-width: 900px;
+  margin: 10px auto;
+  
 }
 
 #signup-link {
@@ -128,11 +136,28 @@ header nav li a {
   margin-top: 20px;
 }
 
+/* Main Page Content */
 #main {
   display: block;
   margin-top: 20px;
   padding: 10px;
   background-color: white;
+}
+
+.section div {
+  margin: 1rem;
+}
+
+#casual div {
+  text-align: right;
+}
+
+#raiding div {
+  text-align: left;
+}
+
+#roleplay div {
+  text-align: right;
 }
 
 /* Footer */
@@ -143,11 +168,7 @@ footer {
   padding: 1rem;
 }
 
-.section div {
-  align-self: center;
-  text-align: center;
-  margin: 2rem;
-}
+
 
 
 
