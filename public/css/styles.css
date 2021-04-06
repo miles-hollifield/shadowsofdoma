@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Mono&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 body {
   background-color: gray;
   margin: 0 auto;
-  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #wrapper {
@@ -39,6 +41,10 @@ body {
 #header-title a {
   text-decoration: none;
   color: white;
+}
+
+h1 {
+  font-family: 'PT Serif', serif;
 }
 
 header img {
