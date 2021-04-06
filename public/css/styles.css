@@ -120,6 +120,7 @@ header nav li a {
   background-color: #504741;
   border: 1px solid black;
   padding: 10px;
+  margin: 1em;
 }
 
 .button-link-style {
@@ -128,6 +129,9 @@ header nav li a {
   text-decoration: none;
 }
 
+#signup-container {
+  margin: 1em;
+}
 
 /* Page Img */
 #page-img-wrapper {
@@ -157,6 +161,11 @@ header nav li a {
 }
 
 #roleplay div {
+  text-align: right;
+}
+
+/* Staff Page */
+#leader {
   text-align: right;
 }
 

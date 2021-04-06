@@ -14,11 +14,11 @@
       </div>
       
       <div id="main">
-        <div class="section">
+        <div class="section" id="leader">
           <img src="<?php echo url_for('/img/ff14-leader.png'); ?>" alt="Guild Leader" width="490" height="600">
           <div>
             <h2>Falcor Stormrage</h2>
-            <p>asdf asdf asdf asdf asdf asdf asd fasdf asdf asdf asd fasdf asdf asdf </p>
+            <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
           </div>
         </div>
       </div>

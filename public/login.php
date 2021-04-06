@@ -56,7 +56,7 @@
                 <input type="text" name="user_name" value="<?php echo h($user_name); ?>" /><br />
                 Password:<br />
                 <input type="password" name="password" value="" /><br />
-                <input type="submit" name="submit" value="Submit"  />
+                <input class="button-style button-link-style" type="submit" name="submit" value="Submit"  />
               </form>
               
               <p>Don't have an account?<br>
