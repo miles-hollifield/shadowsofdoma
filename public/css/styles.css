@@ -2,15 +2,11 @@
   box-sizing: border-box;
 }
 
-html {
-  
-}
-
 body {
   background-color: gray;
   margin: 0 auto;
+  font-size: 20px;
 }
-
 
 #wrapper {
   margin: 0 auto;
@@ -64,7 +60,6 @@ header nav li {
   font-size: 20px;
   margin: 10px;
 }
-
 
 header nav a:hover {
   background-color: #282828;

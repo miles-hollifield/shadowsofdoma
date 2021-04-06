@@ -19,7 +19,7 @@
       </div>
       
       <div id="page-img-wrapper">
-        <img src="<?php echo url_for('/img/ff14-house.png'); ?>" alt="House" width="1096" height="616">
+        <img src="<?php echo url_for('/img/ff14-free-company.jpg'); ?>" alt="House" width="1096" height="616">
       </div>
       
 <?php
