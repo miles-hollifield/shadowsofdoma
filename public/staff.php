@@ -1,6 +1,7 @@
 <?php
   require_once('../private/initialize.php');
   $page = 'staff';
+  $pageTitle = 'Meet Our Staff';
   include(SHARED_PATH . '/public_header.php');
 ?>
       

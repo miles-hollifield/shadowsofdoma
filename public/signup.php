@@ -1,6 +1,7 @@
 <?php
   require_once('../private/initialize.php');
   $page = 'signup';
+  $pageTitle = 'Sign Up';
   include(SHARED_PATH . '/public_header.php');
 ?>
       
