@@ -89,6 +89,15 @@ header nav li a {
 /* End header css */
 
 /* content top */
+#message {
+  background-color: #000;
+  color: yellow;
+  border: 1px solid #000;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
 #content-top {
   background-image: url(../img/wooden-bg.jpg);
   background-position:top
