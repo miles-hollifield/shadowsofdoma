@@ -1,3 +1,9 @@
+<?php
+  if(!isset($page)) {
+    $page = '';
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,11 +13,6 @@
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
   </head>
   <body>
-    <?php
-      if(!isset($page)) {
-        $page = '';
-      }
-    ?>
     <div id="wrapper">
      
       <header>
