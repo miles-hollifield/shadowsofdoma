@@ -38,7 +38,7 @@
                   redirect_to(url_for('/member/index.php'));
                 } else {
                   // username not found or password does not match
-                  $errors[] = "Log in was unsuccessful.";
+                  $errors[] = "Incorrect Username/Password.";
                 }
 
               }
@@ -53,10 +53,8 @@
               <?php echo display_errors($errors); ?>
 
               <form action="login.php" method="post">
-                Username:<br />
-                <input type="text" name="user_name" value="<?php echo h($user_name); ?>" /><br />
-                Password:<br />
-                <input type="password" name="password" value="" /><br />
+                <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
+                <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
                 <input class="button-style button-link-style" type="submit" name="submit" value="Submit"  />
               </form>
               
