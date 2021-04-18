@@ -28,10 +28,10 @@
   require_once('db_credentials.php');
   require_once('database-connection.php');
 
-  include('classes/character.class.php');
-  include('classes/session.class.php');
   include('classes/databaseobject.class.php');
+  include('classes/session.class.php');
   include('classes/admin.class.php');
+  include('classes/character.class.php');
 
   // Autoload class definitions
 

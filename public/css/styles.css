@@ -99,6 +99,10 @@ header nav li a {
   padding: 1.5em;
 }
 
+#roster-table td {
+  border: 1px solid white;
+}
+
 #message {
   background-color: #000;
   color: yellow;

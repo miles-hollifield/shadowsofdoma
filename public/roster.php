@@ -26,6 +26,10 @@
               <tr>
                 <td><?php echo $character->game_character_first_name; ?></td>
                 <td><?php echo $character->game_character_last_name; ?></td>
+                <td><?php echo $character->race_id; ?></td>
+                <td><?php echo $character->class_id; ?></td>
+                <td><?php echo $character->gender_id; ?></td>
+                <td><?php echo $character->free_company_rank_id; ?></td>
               </tr>
               <?php } ?>
             </table>
