@@ -89,6 +89,16 @@ header nav li a {
 /* End header css */
 
 /* content top */
+#roster-table {
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+#roster-table th {
+  border: 1px solid white;
+  padding: 1.5em;
+}
+
 #message {
   background-color: #000;
   color: yellow;
