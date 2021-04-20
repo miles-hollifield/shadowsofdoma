@@ -48,14 +48,14 @@
             ?>
 
             <div id="content">
-              <h1>Log in</h1>
+              <h1>Log In</h1>
 
               <?php echo display_errors($errors); ?>
 
               <form action="login.php" method="post">
                 <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
                 <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
-                <input class="button-style button-link-style" type="submit" name="submit" value="Submit"  />
+                <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
               </form>
               
               <p>Don't have an account?<br>

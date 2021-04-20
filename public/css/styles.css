@@ -19,7 +19,7 @@ body {
   height: 100%;
 }
 
-/*header css*/
+/* Header CSS*/
 
 #masthead {
   padding: 10px;
@@ -56,6 +56,8 @@ header img {
   padding: 10px
 }
 
+/* Nav Bar */
+
 header nav ul {
   margin: 0;
   position: relative;
@@ -86,9 +88,7 @@ header nav li a {
   background-color: #282828;
 }
 
-/* End header css */
-
-/* content top */
+/* Roster */
 #roster-table {
   margin: 0 auto;
   border: 1px solid white;
@@ -101,7 +101,10 @@ header nav li a {
 
 #roster-table td {
   border: 1px solid white;
+  padding: 5px;
 }
+
+/* Messages to User */
 
 #message {
   background-color: #000;
@@ -128,6 +131,8 @@ header nav li a {
   margin: 3px;
 }
 
+/* Top Content */
+
 #content-wrapper {
   margin-top: 20px;
   padding: 10px;
@@ -141,14 +146,24 @@ header nav li a {
 
 #content-top-text {
   color: white;
-  text-align: center;
   padding: 20px;
+}
+
+#content-top-text h1 {
+  text-align: center;
 }
 
 #content-top-text p {
   max-width: 900px;
   margin: 10px auto;
+  text-align: left;
 }
+
+.center {
+  text-align: center;
+}
+
+/* Button Styles */
 
 #signup-link {
   color: white;
@@ -186,6 +201,7 @@ header nav li a {
   background-color: white;
 }
 
+/* About Page */
 .section div {
   margin: 1rem;
 }

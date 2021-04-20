@@ -12,7 +12,7 @@
             <p>Shadows of Doma is a Free Company (guild) in the MMORPG game Final Fantasy XIV on Sargatanas server!</p>
             <p>Shadows of Doma is a social FC for the friendly and considerate, those looking to expand their circle of friends, and players who enjoy group-structured events and the camaraderie that such activities bring.</p>
             <p>All Shadows of Doma members are free to organize their own events, regardless of rank. Shadows of Doma members represent the FC, the people within, and its values.</p>
-            <p>We always welcome new players and end-game veterans.</p>
+            <p class="center">We always welcome new players and end-game veterans.</p>
           </div>
         </div>
       </div>
