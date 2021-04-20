@@ -49,19 +49,23 @@
 
             <div id="content">
               <h1>Log In</h1>
-
-              <?php echo display_errors($errors); ?>
-
-              <form action="login.php" method="post">
-                <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
-                <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
-                <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
-              </form>
-              
-              <p>Don't have an account?<br>
-              <a id="signup-link" href="signup.php">Sign Up</a></p>
-
             </div>
+
+            <div id="login">
+              <div id="form">
+                <?php echo display_errors($errors); ?>
+
+                <form action="login.php" method="post">
+                  <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
+                  <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
+                  <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
+                </form>
+                      
+                <p>Don't have an account?<br>
+                <a id="signup-link" href="signup.php">Sign Up</a></p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

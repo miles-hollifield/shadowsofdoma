@@ -108,7 +108,7 @@ header nav li a {
 
 #message {
   background-color: #000;
-  color: yellow;
+  color: rgb(44, 221, 44);
   border: 1px solid #000;
   margin: 10px auto;
   padding: 10px;
@@ -116,10 +116,11 @@ header nav li a {
 }
 
 .errors {
+  background-color: black;
   margin: 0 auto;
   color: red;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .errors ul {
@@ -160,6 +161,16 @@ header nav li a {
 }
 
 .center {
+  text-align: center;
+}
+
+/* Login Page */
+#login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#login p {
   text-align: center;
 }
 
