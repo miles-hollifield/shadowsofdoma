@@ -9,6 +9,7 @@
     <title><?php if(isset($pageTitle)) { echo h($pageTitle) . ' - '; } ?>Shadows of Doma</title>
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
+    <script src="<?php echo url_for('../public/js/gallery.js'); ?>" defer></script>
   </head>
   <body>
     <div id="wrapper">
@@ -32,7 +33,7 @@
             <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a></li>
             <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a></li>
             <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a></li>
-            <li><a href="../../public/member/logout.php">Log Out <?php echo $session->user_name; ?></a></li>
+            <li><a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
           </ul>
         </nav>
       </header>

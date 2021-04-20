@@ -215,7 +215,18 @@ footer {
   padding: 1rem;
 }
 
+/* Modal Gallery */
+#gallery-grid {
+  padding: 10px;
+}
 
+#gallery-grid img {
+  padding: 10px;
+}
+
+#modal {
+  display: none;
+}
 
 
 
