@@ -214,7 +214,6 @@ header nav li a {
 
 /* Main Page Content */
 #main {
-  display: block;
   margin-top: 20px;
   padding: 10px;
   background-color: white;
@@ -264,11 +263,16 @@ footer {
 
 /* Modal Gallery */
 #gallery-grid {
-  padding: 10px;
+  border: 1px solid black;
+  max-width: 1100x;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 #gallery-grid img {
-  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
 }
 
 #modal {
