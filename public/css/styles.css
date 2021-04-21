@@ -90,17 +90,17 @@ header nav li a {
 
 /* Roster */
 #roster-table {
-  margin: 0 auto;
-  border: 1px solid white;
+  margin: 10px auto;
+  border: 1px solid black;
 }
 
 #roster-table th {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 1.5em;
 }
 
 #roster-table td {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 5px;
 }
 
@@ -166,8 +166,16 @@ header nav li a {
 
 /* Login Page */
 #login {
+  display: inline;
   text-align: center;
   margin-top: 20px;
+}
+
+#form {
+  border: 1px solid black;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 20px;
 }
 
 #login p {
@@ -177,7 +185,7 @@ header nav li a {
 /* Button Styles */
 
 #signup-link {
-  color: white;
+  color: black;
 }
 
 .button-style {
