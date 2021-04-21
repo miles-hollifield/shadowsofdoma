@@ -214,7 +214,7 @@ header nav li a {
 
 /* About Page */
 .section div {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 #casual div {
@@ -230,8 +230,20 @@ header nav li a {
 }
 
 /* Staff Page */
+#main h2 {
+  text-align: center;
+}
+
 #leader {
   text-align: right;
+}
+
+.staff-heading {
+  margin: 3rem;
+}
+
+.section img {
+  margin: 1rem;
 }
 
 /* Footer */
