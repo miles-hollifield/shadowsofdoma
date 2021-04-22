@@ -1,15 +1,15 @@
 //document.querySelector('p').addEventListener('click', closeBox);
-//document.querySelector('div').addEventListener('click', function(e){
-//  if(e.target.matches('div')){
-//    closeBox();
-//  }
-//});
-//document.querySelector('button').addEventListener('click', showBox);
+document.querySelector('#galllery-grid img').addEventListener('click', function(e){
+  if(e.target.matches('#galllery-grid img')){
+    showBox();
+  }
+});
 
-//function closeBox(){
-//  document.querySelector('div').style.display = 'none';
-//}
+function closeBox(){
+  document.querySelector('#modal').style.display = 'none';
+}
 
-//function showBox(){
-//  document.querySelector('div').style.display = 'block';
-//}
+function showBox(){
+  document.querySelector('#modal').style.display = 'block';
+}
+
