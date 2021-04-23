@@ -1,0 +1,174 @@
+/* img1 */
+.modalOuterBox {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img2 */
+.modalOuterBox2 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent2 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close2:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img3 */
+.modalOuterBox3 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent3 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close3:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img4 */
+.modalOuterBox4 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent4 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close4:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img5 */
+.modalOuterBox5 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent5 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close5:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
