@@ -161,7 +161,7 @@ header nav li a {
 }
 
 .center {
-  text-align: center;
+  text-align: center !important;
 }
 
 /* Login Page */
