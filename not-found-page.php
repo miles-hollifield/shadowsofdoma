@@ -15,7 +15,7 @@
       </div>
 
       <div id="page-img-wrapper">
-        <img src="<?php echo url_for('../public/img/ff14-shrug.jpg'); ?>" alt="Shrug" width="1096" height="619">
+        <img src="<?php echo url_for('../public/img/ff14-shrug.jpg'); ?>" alt="Shrug" width="1190" height="672">
       </div>
       
 <?php
