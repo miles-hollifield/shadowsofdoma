@@ -18,15 +18,17 @@
         <script src="<?php echo url_for('../public/js/gallery.js'); ?>" defer></script>
         <!-- Thumbnail Gallery -->
         <div id="gallery-grid">
-          <img id="img1" src="<?php echo url_for('/img/gallery/ff14-group-photo-small.jpg'); ?>" alt="Free Company Group Photo" width="345" height="194">
-          <img id="img2" src="<?php echo url_for('/img/gallery/ff14-shadowbringers-small.jpg'); ?>" alt="Free Company Dungeon" width="345" height="194">
-          <img id="img3" src="<?php echo url_for('/img/gallery/ff14-rival-wings-small.jpg'); ?>" alt="Free Company Fight" width="345" height="194">
-          <img id="img4" src="<?php echo url_for('/img/gallery/ff14-all-black-small.jpg'); ?>" alt="Free Company All Black Photo" width="345" height="194">
-          <img id="img5" src="<?php echo url_for('/img/gallery/ff14-stance-small.jpg'); ?>" alt="Free Company Stance Photo" width="345" height="194">
-          <img id="img6" src="<?php echo url_for('/img/gallery/ff14-mech-boss-small.jpg'); ?>" alt="Free Company Mech Boss" width="345" height="194">
-          <img id="img7" src="<?php echo url_for('/img/gallery/ff14-armored-small.jpg'); ?>" alt="Free Company Armored Photo" width="345" height="194">
-          <img id="img8" src="<?php echo url_for('/img/gallery/ff14-ultima-boss-small.jpg'); ?>" alt="Free Company Ultima Boss" width="345" height="194">
-          <img id="img9" src="<?php echo url_for('/img/gallery/ff14-ingame-small.jpg'); ?>" alt="Free Company In-Game Photo" width="345" height="194">
+          <div id="gallery-grid-container">
+            <img id="img1" src="<?php echo url_for('/img/gallery/ff14-group-photo-small.jpg'); ?>" alt="Free Company Group Photo" width="345" height="194">
+            <img id="img2" src="<?php echo url_for('/img/gallery/ff14-shadowbringers-small.jpg'); ?>" alt="Free Company Dungeon" width="345" height="194">
+            <img id="img3" src="<?php echo url_for('/img/gallery/ff14-rival-wings-small.jpg'); ?>" alt="Free Company Fight" width="345" height="194">
+            <img id="img4" src="<?php echo url_for('/img/gallery/ff14-all-black-small.jpg'); ?>" alt="Free Company All Black Photo" width="345" height="194">
+            <img id="img5" src="<?php echo url_for('/img/gallery/ff14-stance-small.jpg'); ?>" alt="Free Company Stance Photo" width="345" height="194">
+            <img id="img6" src="<?php echo url_for('/img/gallery/ff14-mech-boss-small.jpg'); ?>" alt="Free Company Mech Boss" width="345" height="194">
+            <img id="img7" src="<?php echo url_for('/img/gallery/ff14-armored-small.jpg'); ?>" alt="Free Company Armored Photo" width="345" height="194">
+            <img id="img8" src="<?php echo url_for('/img/gallery/ff14-ultima-boss-small.jpg'); ?>" alt="Free Company Ultima Boss" width="345" height="194">
+            <img id="img9" src="<?php echo url_for('/img/gallery/ff14-ingame-small.jpg'); ?>" alt="Free Company In-Game Photo" width="345" height="194">
+          </div>
         </div>
 
         <!-- Modal -->

@@ -46,7 +46,7 @@
 
         <div class="section">
           <img src="<?php echo url_for('/img/staff/ff14-council-2.jpg'); ?>" alt="Marco Wrynn" width="436" height="560">
-          <div>
+          <div class="right-align">
             <h3>Marco Wrynn</h3>
             <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
           </div>
@@ -68,7 +68,7 @@
         </div>
         <div class="section">
           <img src="<?php echo url_for('/img/staff/ff14-officer-1.jpg'); ?>" alt="Naga Fellrain" width="340" height="570">
-          <div>
+          <div class="right-align">
             <h3>Naga Fellrain</h3>
             <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
           </div>
@@ -84,7 +84,7 @@
 
         <div class="section">
           <img src="<?php echo url_for('/img/staff/ff14-officer-3.jpg'); ?>" alt="Aleidis Westmoore" width="340" height="570">
-          <div>
+          <div class="right-align">
             <h3>Aleidis Westmoore</h3>
             <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
           </div>
@@ -100,7 +100,7 @@
 
         <div class="section">
           <img src="<?php echo url_for('/img/staff/ff14-officer-5.jpg'); ?>" alt="Aang Jopino" width="340" height="570">
-          <div>
+          <div class="right-align">
             <h3>Aang Jopino</h3>
             <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
           </div>

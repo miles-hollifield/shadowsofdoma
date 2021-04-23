@@ -9,26 +9,29 @@ html {
 }
 
 body {
-  background-color: gray;
+  /* background-image: url(../img/ff14-background.jpg);
+  background-position: center; */
+  background-color: rgb(37, 37, 37);
   margin: 0 auto;
 }
 
 #wrapper {
   margin: 0 auto;
-  width: 1120px;
+  width: 1200px;
   height: 100%;
 }
 
 /* Header CSS*/
 
 #masthead {
-  padding: 10px;
+  padding: 5px;
   background-color: white;
 }
 
 #header-img {
-  background-image: url(../img/ff14-fc-desk.png);
-  background-position: center;
+  /* background-image: url(../img/ff14-crystal.jpg);
+  background-position: center; */
+  background-color: rgb(10, 9, 10);
 }
 
 #header-title {
@@ -61,7 +64,7 @@ header img {
 header nav ul {
   margin: 0;
   position: relative;
-  background-color: #504741;
+  background-color: #3b3632;
   list-style: none;
   text-align: center;
 }
@@ -135,8 +138,8 @@ header nav li a {
 /* Top Content */
 
 #content-wrapper {
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 5px;
   background-color: white;
 }
 
@@ -168,7 +171,6 @@ header nav li a {
 #login {
   display: inline;
   text-align: center;
-  margin-top: 20px;
 }
 
 #login-container {
@@ -232,21 +234,21 @@ header nav li a {
 
 /* Page Img */
 #page-img-wrapper {
-  padding: 10px;
+  padding: 5px;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* Main Page Content */
 #main {
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 5px;
   background-color: white;
 }
 
 /* About Page */
 .section div {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 #casual div {
@@ -278,9 +280,13 @@ header nav li a {
   margin: 1rem;
 }
 
+.right-align {
+  text-align: right;
+}
+
 /* Footer */
 footer {
-  background-color: #504741;
+  background-color: #3b3632;
   color: #fff;
   margin-top: 1rem;
   padding: 1rem;
@@ -290,14 +296,24 @@ footer {
 #gallery-grid {
   border: 1px solid black;
   max-width: 1100x;
-  margin: 0 auto;
   padding: 15px;
+  text-align: center;
+}
+
+#gallery-grid-container {
+  margin: 5px auto;
+}
+
+#thumbnails {
+  margin: 0 auto;
+  background-color: blue;
 }
 
 #gallery-grid img {
   border: 1px solid black;
   margin: 5px;
   padding: 5px;
+  cursor: pointer;
 }
 
 
