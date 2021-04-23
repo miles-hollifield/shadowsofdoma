@@ -14,7 +14,7 @@
       </div>
 
       <div id="main">
-      <?php
+        <?php
 
         $errors = [];
         $user_name = '';
@@ -54,10 +54,11 @@
         ?>
 
         <div id="login">
-          <div id="form">
+          <p>Enter your login information below:</p>
+          <div id="login-container">
             <?php echo display_errors($errors); ?>
 
-            <form action="login.php" method="post">
+            <form class="form" action="login.php" method="post">
               <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
               <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
               <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />

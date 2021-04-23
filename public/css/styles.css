@@ -171,18 +171,15 @@ header nav li a {
   margin-top: 20px;
 }
 
-#form {
+#login-container {
   border: 1px solid black;
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 20px;
+  max-width: 400px;
+  margin: 5px auto;
 }
 
 #login p {
   text-align: center;
 }
-
-/* Button Styles */
 
 #signup-link {
   color: black;
@@ -191,8 +188,9 @@ header nav li a {
 .button-style {
   background-color: #504741;
   border: 1px solid black;
-  padding: 10px;
+  padding: 10px 80px 10px 80px;
   margin: 1em;
+  text-align: center;
 }
 
 .button-link-style {
@@ -201,8 +199,35 @@ header nav li a {
   text-decoration: none;
 }
 
+/* Sign Up Page */
+#signup {
+  display: inline;
+}
+
 #signup-container {
-  margin: 1em;
+  border: 1px solid black;
+  text-align: center;
+  max-width: 400px;
+  margin: 5px auto;
+}
+
+#signup p {
+  text-align: center;
+}
+
+.form {
+  padding: 1em;
+}
+
+.form input {
+  width: 200px;
+  font-size: 1rem;
+}
+
+.form div {
+  text-align: left;
+  margin: 0 auto;
+  width: 200px;
 }
 
 /* Page Img */
