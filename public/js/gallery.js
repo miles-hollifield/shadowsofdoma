@@ -77,3 +77,67 @@ BOXOUT5.addEventListener('click', function(e){
         BOXOUT5.style.display = 'none';
     }
 });
+
+//img6
+const CLOSE6 = document.querySelector('.close6');
+const BOXOUT6 = document.querySelector('.modalOuterBox6');
+const BOXIN6 = document.querySelector('.modalContent6');
+const IMG6 = document.querySelector('#img6');
+const MODAL6 = document.querySelector('#modal6');
+IMG6.addEventListener('click', function(e){
+    MODAL6.style.display = 'block';
+});
+CLOSE6.addEventListener('click', () => BOXOUT6.style.display = 'none');
+BOXOUT6.addEventListener('click', function(e){
+    if(e.target.matches('.modalOuterBox6')){
+        BOXOUT6.style.display = 'none';
+    }
+});
+
+//img7
+const CLOSE7 = document.querySelector('.close7');
+const BOXOUT7 = document.querySelector('.modalOuterBox7');
+const BOXIN7 = document.querySelector('.modalContent7');
+const IMG7 = document.querySelector('#img7');
+const MODAL7 = document.querySelector('#modal7');
+IMG7.addEventListener('click', function(e){
+    MODAL7.style.display = 'block';
+});
+CLOSE7.addEventListener('click', () => BOXOUT7.style.display = 'none');
+BOXOUT7.addEventListener('click', function(e){
+    if(e.target.matches('.modalOuterBox7')){
+        BOXOUT7.style.display = 'none';
+    }
+});
+
+//img8
+const CLOSE8 = document.querySelector('.close8');
+const BOXOUT8 = document.querySelector('.modalOuterBox8');
+const BOXIN8 = document.querySelector('.modalContent8');
+const IMG8 = document.querySelector('#img8');
+const MODAL8 = document.querySelector('#modal8');
+IMG8.addEventListener('click', function(e){
+    MODAL8.style.display = 'block';
+});
+CLOSE8.addEventListener('click', () => BOXOUT8.style.display = 'none');
+BOXOUT8.addEventListener('click', function(e){
+    if(e.target.matches('.modalOuterBox8')){
+        BOXOUT8.style.display = 'none';
+    }
+});
+
+//img9
+const CLOSE9 = document.querySelector('.close9');
+const BOXOUT9 = document.querySelector('.modalOuterBox9');
+const BOXIN9 = document.querySelector('.modalContent9');
+const IMG9 = document.querySelector('#img9');
+const MODAL9 = document.querySelector('#modal9');
+IMG9.addEventListener('click', function(e){
+    MODAL9.style.display = 'block';
+});
+CLOSE9.addEventListener('click', () => BOXOUT9.style.display = 'none');
+BOXOUT9.addEventListener('click', function(e){
+    if(e.target.matches('.modalOuterBox9')){
+        BOXOUT9.style.display = 'none';
+    }
+});

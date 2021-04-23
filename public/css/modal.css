@@ -172,3 +172,143 @@
     cursor: pointer;
     transform: rotate(90deg);
 }
+
+/* img6 */
+.modalOuterBox6 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent6 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close6 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close6:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img7 */
+.modalOuterBox7 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent7 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close7 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close7:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img8 */
+.modalOuterBox8 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent8 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close8 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close8:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* img9 */
+.modalOuterBox9 {
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%; 
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.modalContent9 {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 2rem auto auto;
+    padding: 1rem;
+    position: relative;
+    width: 1150px;
+}
+  
+.close9 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transition: all .25s;
+}
+  
+.close9:hover {
+    color: #f00;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
