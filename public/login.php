@@ -42,6 +42,10 @@
               $session->login($admin);
               $session->message('Welcome ' . $user_name . ', you have successfully logged in.');
               redirect_to(url_for('/member/index.php'));
+            } else if ($session->is_admin()) {
+              $session->login($admin);
+              $session->message('Welcome ' . $user_name . ', you have successfully logged in.');
+              redirect_to(url_for('/admin/index.php'));
             } else {
               // username not found or password does not match
               $errors[] = "Incorrect Username/Password.";
