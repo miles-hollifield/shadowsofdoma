@@ -52,22 +52,23 @@
         }
 
         ?>
+        <div id="main-container">
+          <div id="login">
+            <p>Enter your login information below:</p>
+            <div id="login-container">
+              <?php echo display_errors($errors); ?>
 
-        <div id="login">
-          <p>Enter your login information below:</p>
-          <div id="login-container">
-            <?php echo display_errors($errors); ?>
-
-            <form class="form" action="login.php" method="post">
-              <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
-              <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
-              <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
-            </form>
-                      
-            <p>Don't have an account?<br>
-            <a id="signup-link" href="signup.php">Sign Up</a></p>
+              <form class="form" action="login.php" method="post">
+                <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
+                <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
+                <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
+              </form>
+                        
+              <p>Don't have an account?<br>
+              <a id="signup-link" href="signup.php">Sign Up</a></p>
+            </div>
           </div>
-        </div>        
+        </div>
       </div>
       
 <?php
