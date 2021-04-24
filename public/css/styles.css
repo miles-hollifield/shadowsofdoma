@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  /* background-image: url(../img/ff14-background.jpg);
+  /*background-image: url(../img/ff14-background.jpg);
   background-position: center; */
   background-color: rgb(37, 37, 37);
   margin: 0 auto;
@@ -29,8 +29,6 @@ body {
 }
 
 #header-img {
-  /* background-image: url(../img/ff14-crystal.jpg);
-  background-position: center; */
   background-color: rgb(10, 9, 10);
 }
 
@@ -290,6 +288,7 @@ footer {
   color: #fff;
   margin-top: 1rem;
   padding: 1rem;
+  text-align: center;
 }
 
 /* Modal Gallery */

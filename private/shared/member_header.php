@@ -9,34 +9,34 @@
     <title><?php if(isset($pageTitle)) { echo h($pageTitle) . ' - '; } ?>Shadows of Doma</title>
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
-    <script src="<?php echo url_for('../public/js/gallery.js'); ?>" defer></script>
+    <link href="<?php echo url_for('../public/css/modal.css'); ?>" rel="stylesheet">
   </head>
   <body>
-    <div id="wrapper">
-     
-      <header>
-        <div id="masthead">
-          <div id="header-img">
-            <a href="../../public/member/index.php"><img src="<?php echo url_for('/img/crest_white-e1601152867882.png'); ?>" alt="Crest" width="230" height="235"></a>
-            <div id="header-title">
-              <a href="../../public/member/index.php"><h1>SHADOWS OF DOMA</h1></a>
-              <a href="../../public/member/index.php"><p>FINAL FANTASY XIV</p></a>
-              <a href="../../public/member/index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
-            </div>
+    <header>
+      <div id="masthead">
+        <div id="header-img">
+          <a href="index.php"><img src="<?php echo url_for('img/ff14-guild-crest.png'); ?>" alt="Crest" width="150" height="155"></a>
+          <div id="header-title">
+            <a href="index.php"><h1>SHADOWS OF DOMA</h1></a>
+            <a href="index.php"><p>FINAL FANTASY XIV</p></a>
+            <a href="index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
           </div>
+          <a href="index.php"><img src="<?php echo url_for('img/ff14-guild-crest.png'); ?>" alt="Crest" width="150" height="155"></a>
         </div>
-        <nav>
-          <ul>
-            <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/member/index.php">Home</a></li>
-            <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/member/about.php">About Us</a></li>
-            <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/member/staff.php">Meet Our Staff</a></li>
-            <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a></li>
-            <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a></li>
-            <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a></li>
-            <li><a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
-          </ul>
-        </nav>
-      </header>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/member/index.php">Home</a></li>
+          <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/member/about.php">About Us</a></li>
+          <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/member/staff.php">Meet Our Staff</a></li>
+          <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a></li>
+          <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a></li>
+          <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a></li>
+          <li><a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
 
-      <?php echo display_session_message(); ?>
+    <?php echo display_session_message(); ?>
 
