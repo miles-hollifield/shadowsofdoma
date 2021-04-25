@@ -48,6 +48,12 @@ class DatabaseObject {
     return static::find_by_sql($sql);
   }
 
+  // Account Function
+  static public function get_account_characters($user_name) {
+    $sql = "SELECT game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id JOIN user ON game_character.user_id = user.user_id WHERE user_name = " . self::$database->quote($user_name) . " ORDER BY game_character.free_company_rank_id DESC";
+    return static::find_by_sql($sql);
+  } 
+
   static public function instantiate($record) {
     $object = new static;
     foreach($record as $property => $value) {

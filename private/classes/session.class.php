@@ -1,6 +1,6 @@
 <?php
 
-class Session {
+class Session extends Admin {
 
   private $admin_id;
   public $user_name;
@@ -18,13 +18,13 @@ class Session {
     return $this->user_name;
   }
 
-  public function login($admin) {
-    if($admin) {
+  public function login($user) {
+    if($user) {
       // prevent session fixation attacks
       session_regenerate_id();
-      $this->admin_id = $_SESSION['admin_id'] = $admin->user_id;
-      $this->user_name = $_SESSION['user_name'] = $admin->user_name;
-      $this->user_level = $_SESSION['user_level'] = $admin->user_level;
+      $this->admin_id = $_SESSION['admin_id'] = $user->user_id;
+      $this->user_name = $_SESSION['user_name'] = $user->user_name;
+      $this->user_level = $_SESSION['user_level'] = $user->user_level;
       $this->last_login = $_SESSION['last_login'] = time();
     }
     return true;

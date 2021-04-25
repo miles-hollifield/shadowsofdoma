@@ -12,6 +12,12 @@
           </div>
         </div>
       </div>
+
+      <div id="main">
+        <div id="main-container">
+          <p>asdfl;kajswdl;kfjals;djfalskdjf;als</p>
+        </div>
+      </div>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');
