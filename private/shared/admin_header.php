@@ -26,13 +26,13 @@
       </div>
       <nav>
         <ul>
-          <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/member/index.php">Home</a></li>
-          <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/member/about.php">About Us</a></li>
-          <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/member/staff.php">Meet Our Staff</a></li>
-          <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a></li>
-          <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a></li>
-          <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a></li>
-          <li><a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
+          <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/admin/index.php">Home</a></li>
+          <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/admin/about.php">About Us</a></li>
+          <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/admin/staff.php">Meet Our Staff</a></li>
+          <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/admin/gallery.php">Gallery</a></li>
+          <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/admin/roster.php">Roster</a></li>
+          <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/admin/account.php">Account</a></li>
+          <li><a href="../../public/admin/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
         </ul>
       </nav>
     </header>

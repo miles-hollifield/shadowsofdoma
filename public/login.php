@@ -35,24 +35,23 @@
 
           // if there were no errors, try to login
           if(empty($errors)) {
-            $admin = Admin::find_by_username($user_name);
+            $user = Admin::find_by_username($user_name);
             // test if admin found and password is correct
-            if($admin != false && $admin->verify_password($password)) {
-              // Mark admin as logged in
-              $session->login($admin);
+            if($user != false && $user->verify_password($password)) {
+              $session->login($user);
               $session->message('Welcome ' . $user_name . ', you have successfully logged in.');
-              redirect_to(url_for('/member/index.php'));
-            } else if ($session->is_admin()) {
-              $session->login($admin);
-              $session->message('Welcome ' . $user_name . ', you have successfully logged in.');
-              redirect_to(url_for('/admin/index.php'));
+              if($session->is_member()) {
+                // Redirect to member section
+                redirect_to(url_for('/member/index.php'));
+              } else if($session->is_admin()) {
+                // Redirect to admin section
+                redirect_to(url_for('/admin/index.php'));
+              }
             } else {
               // username not found or password does not match
               $errors[] = "Incorrect Username/Password.";
             }
-
           }
-
         }
 
         ?>

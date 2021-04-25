@@ -34,6 +34,14 @@ class Session {
     // return isset($this->admin_id);
     return isset($this->admin_id) && $this->last_login_is_recent();
   }
+
+  public function is_member() {
+    if($this->is_logged_in() && $this->user_level == 'm') {
+      return true;
+    } else {
+      // $session->message("Access denied.");
+    }
+  }
   
   public function is_admin() {
     if($this->is_logged_in() && $this->user_level == 'a') {
