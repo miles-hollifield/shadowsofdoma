@@ -1,6 +1,6 @@
 <?php
 
-class Account extends DatabaseObject {
+class Account extends Character {
 
     static protected $table_name = 'user';
     static protected $db_columns = ['user_id', 'user_first_name', 'user_last_name', 'user_email', 'user_name', 'user_hashed_password', 'user_level'];
