@@ -38,5 +38,7 @@
       </nav>
     </header>
     <div id="wrapper">
+
+    <?php echo display_session_message(); ?>
      
       

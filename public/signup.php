@@ -25,7 +25,8 @@
 
             if($result === true) {
               $session->login($admin);
-              $session->message('Welcome to Shadows of Doma!');
+              $user_name = $_SESSION['user_name'];
+              $session->message('Sign up successful! Welcome to Shadows of Doma, ' . $user_name . '!');
               redirect_to(url_for('/member/index.php'));
             } else {
               // show errors
