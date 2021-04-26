@@ -15,16 +15,16 @@
 
       <div id="main">
         <div id="main-container">
-          <?php 
-            $session_user = $session->user_name;
-            $account = Session::find_by_username($session_user); 
+          <?php
+            $user = $_SESSION['user_name'];
+            $account = Account::find_by_username($user); 
           ?>
           <p>Username: <?php echo $account->user_name; ?></p>
           <p>First Name: <?php echo $account->user_first_name; ?></p>
           <p>Last Name: <?php echo $account->user_last_name; ?></p>
           <p>Email: <?php echo $account->user_email; ?></p>
 
-          <p>Characters Owned by <?php echo $session_user; ?>: </p>
+          <p>Characters Owned by <?php echo $session->user_name; ?>: </p>
           <table id="roster-table">
             <tr>
               <th>Character First Name</th>
@@ -35,7 +35,7 @@
               <th>Free Company Rank</th>
             </tr> 
 
-            <?php $acc_chars = Account::get_account_characters($session_user); ?>
+            <?php $acc_chars = Account::get_account_characters($user); ?>
 
             <?php foreach($acc_chars as $acc_char) { ?>
             <tr>

@@ -107,17 +107,6 @@ class Admin extends DatabaseObject {
     return $this->errors;
   }
 
-  static public function find_by_username($user_name) {
-    $sql = "SELECT * FROM " . static::$table_name . " ";
-    $sql .= "WHERE user_name=" . self::$database->quote($user_name);
-    $object_array = static::find_by_sql($sql);
-    if(!empty($object_array)) {
-        return array_shift($object_array);
-    }   else    {
-        return false;
-    }
-  }
-
 }
 
 ?>

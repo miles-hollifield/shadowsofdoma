@@ -1,6 +1,6 @@
 <?php
 
-class Session extends Admin {
+class Session extends DatabaseObject {
 
   private $admin_id;
   public $user_name;

@@ -4,7 +4,7 @@ class DatabaseObject {
 
   static protected $database;
   static protected $table_name = "user";
-  static protected $columns = [];
+  static protected $db_columns = ['user_id', 'user_first_name', 'user_last_name', 'user_email', 'user_name', 'user_hashed_password', 'user_level'];
   public $errors = [];
 
   static public function set_database($database) {
@@ -42,6 +42,18 @@ class DatabaseObject {
     return static::find_by_sql($sql);
   }
 
+  // Find by Username Function
+  static public function find_by_username($user_name) {
+    $sql = "SELECT * FROM " . static::$table_name . " ";
+    $sql .= "WHERE user_name=" . self::$database->quote($user_name);
+    $object_array = static::find_by_sql($sql);
+    if(!empty($object_array)) {
+        return array_shift($object_array);
+    }   else    {
+        return false;
+    }
+  }
+
   // Roster Function
   static public function fill_roster() {
     $sql = "SELECT game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id ORDER BY game_character.free_company_rank_id DESC";
@@ -50,7 +62,8 @@ class DatabaseObject {
 
   // Account Function
   static public function get_account_characters($user_name) {
-    $sql = "SELECT game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id JOIN user ON game_character.user_id = user.user_id WHERE user_name = " . self::$database->quote($user_name) . " ORDER BY game_character.free_company_rank_id DESC";
+    $username = self::$user_name;
+    $sql = "SELECT game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id JOIN user ON game_character.user_id = user.user_id WHERE user_name = " . $username . " ORDER BY game_character.free_company_rank_id DESC";
     return static::find_by_sql($sql);
   } 
 
