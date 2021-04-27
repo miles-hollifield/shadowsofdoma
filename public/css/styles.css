@@ -89,22 +89,6 @@ header nav li a {
   background-color: #282828;
 }
 
-/* Roster */
-#roster-table {
-  margin: 10px auto;
-  border: 1px solid black;
-}
-
-#roster-table th {
-  border: 1px solid black;
-  padding: 1.5em;
-}
-
-#roster-table td {
-  border: 1px solid black;
-  padding: 5px;
-}
-
 /* Messages to User */
 
 #message {
@@ -275,8 +259,44 @@ header nav li a {
   text-align: right;
 }
 
-/* Staff Page */
+/* Roster */
+#roster-table {
+  margin: 10px auto;
+  border: 1px solid black;
+}
 
+#roster-table th {
+  border: 1px solid black;
+  padding: 1.5em;
+}
+
+#roster-table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* Account Page */
+#user-info {
+  margin: 10px;
+  border-right: 1px solid black;
+}
+
+#user-chars {
+  margin: 10px;
+}
+
+#account-table {
+  border: 1px solid black;
+}
+
+#account-table th {
+  border: 1px solid black;
+}
+
+#account-table td {
+  border: 1px solid black;
+}
+/* Staff Page */
 
 #main h2 {
   text-align: center;
