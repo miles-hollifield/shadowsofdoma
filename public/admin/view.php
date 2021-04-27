@@ -28,8 +28,12 @@
             <h2>Character: <?php echo $character->game_character_first_name . ' ' . $character->game_character_last_name; ?></h2>
             <div id="char-details">
               <dl>
-                <dt>Name:</dt>
-                <dd><?php echo $character->game_character_first_name . ' ' . $character->game_character_last_name; ?></dd>
+                <dt>First Name:</dt>
+                <dd><?php echo $character->game_character_first_name; ?></dd>
+              </dl>
+              <dl>
+                <dt>Last Name:</dt>
+                <dd><?php echo $character->game_character_last_name; ?></dd>
               </dl>
               <dl>
                 <dt>Gender:</dt>
