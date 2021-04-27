@@ -66,6 +66,10 @@
                 <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
                 <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
               </form>
+
+              <div id="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LftO7saAAAAAAB0trqQyVmyHUgbrvgLJEgx4QfN"></div>
+              </div>
                         
               <p>Don't have an account?<br>
               <a id="signup-link" href="signup.php">Sign Up</a></p>

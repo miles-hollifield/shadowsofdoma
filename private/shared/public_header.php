@@ -13,6 +13,7 @@
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/modal.css'); ?>" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
     <header>

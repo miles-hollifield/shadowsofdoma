@@ -200,6 +200,14 @@ header nav li a {
   text-decoration: none;
 }
 
+#recaptcha-container {
+  border: 2px solid black;
+}
+
+.g-recaptcha {
+  display: inline;
+  text-align: right;
+}
 /* Sign Up Page */
 #signup {
   display: inline;
