@@ -1,4 +1,5 @@
 <?php
+  require_public();
   if(!isset($page)) {
     $page = '';
   }
