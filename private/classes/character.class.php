@@ -3,7 +3,7 @@
 class Character extends DatabaseObject {
     
     static protected $table_name = 'game_character';
-
+    static protected $id_name = 'game_character_id';
     static protected $db_columns = ['game_character_id', 'user_id', 'free_company_rank_id', 'race_id', 'class_id', 'gender_id', 'game_character_first_name', 'game_character_last_name'];
 
     public $game_character_id;

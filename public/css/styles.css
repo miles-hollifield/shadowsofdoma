@@ -267,7 +267,7 @@ header nav li a {
 
 #roster-table th {
   border: 1px solid black;
-  padding: 1.5em;
+  padding: 5px;
 }
 
 #roster-table td {
@@ -291,10 +291,12 @@ header nav li a {
 
 #account-table th {
   border: 1px solid black;
+  padding: 5px;
 }
 
 #account-table td {
   border: 1px solid black;
+  padding: 5px;
 }
 /* Staff Page */
 
