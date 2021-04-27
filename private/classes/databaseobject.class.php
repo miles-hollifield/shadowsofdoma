@@ -69,6 +69,25 @@ class DatabaseObject {
     return static::find_by_sql($sql);
   } 
 
+  // Fill View Function
+  static public function fill_view($id) {
+    $id = self::$database->quote($id);
+    $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status, user.user_name FROM game_character ";
+    $sql .= "JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id JOIN user ON game_character.user_id = user.user_id ";
+    $sql .= "WHERE game_character_id = " . $id;
+    $object_array = static::find_by_sql($sql);
+    if(!empty($object_array)) {
+        return array_shift($object_array);
+    }   else    {
+        return false;
+    }
+  }
+
+  // Owned By Function
+  static public function owned_by() {
+
+  }
+
   static public function instantiate($record) {
     $object = new static;
     foreach($record as $property => $value) {

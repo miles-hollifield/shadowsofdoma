@@ -14,12 +14,8 @@
       </div>
 
       <?php
-        $id = $_GET['game_character_id'] ?? '1'; // PHP > 7.0
-        //$character = Character::find_by_id($id);
-        $character = Character::fill_roster();
-
-        $user = $_SESSION['user_name'];
-        $account = Account::find_by_username($user); 
+        $id = $_GET['id'] ?? '1'; // PHP > 7.0
+        $character = Account::fill_view($id);
       ?>
 
       <div id="main">
@@ -53,7 +49,7 @@
               </dl>
               <dl>
                 <dt>Character Owned by User:</dt>
-                <dd><?php echo $account->user_name; ?></dd>
+                <dd><?php echo $character->user_name; ?></dd>
               </dl>                                                                    
             </div>
 
@@ -62,3 +58,7 @@
         </div>
 
       </div>
+
+<?php
+  include(SHARED_PATH . '/public_footer.php');
+?>
