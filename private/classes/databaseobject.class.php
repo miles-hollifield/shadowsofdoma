@@ -54,6 +54,12 @@ class DatabaseObject {
     }
   }
 
+  // Find User ID and User Name
+  static public function find_id_and_name() {
+    $sql = "SELECT user_id, user_name FROM user ";
+    return static::find_by_sql($sql);
+  }
+
   // Roster Function
   static public function fill_roster() {
     $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id ORDER BY game_character.game_character_id";
@@ -83,11 +89,6 @@ class DatabaseObject {
     }
   }
 
-  // Owned By Function
-  static public function owned_by() {
-
-  }
-
   static public function instantiate($record) {
     $object = new static;
     foreach($record as $property => $value) {
@@ -110,18 +111,10 @@ class DatabaseObject {
     $sql .= ");";
 
     $stmt = self::$database->prepare($sql);
-    
-    // $stmt->bindValue(':common_name', $this->common_name );
-    // $stmt->bindValue(':habitat', $this->habitat );
-    // $stmt->bindValue(':food', $this->food );
-    // $stmt->bindValue(':conservation_id', $this->conservation_id );
-    // $stmt->bindValue('backyard_tips', $this->backyard_tips );
-    
-    //$result = self::$database->exec($sql);
     $result = $stmt->execute();
 
     if( $result ) {
-        $this->user_id = self::$database->lastInsertID();
+        $this->game_character_id = self::$database->lastInsertID();
     } else  echo "Insert query did not run:" . $sql;
     
     return $result;    
@@ -139,7 +132,7 @@ class DatabaseObject {
 
     $id = static::$id_name;
 
-    $sql = "UPDATE game_character SET ";
+    $sql = "UPDATE " . static::$table_name . " SET ";
     $sql .= join(", ", $attribute_pairs);
     $sql .= " WHERE game_character_id = " . self::$database->quote($this->$id) . " ";
     $sql .= "LIMIT 1";
@@ -171,7 +164,7 @@ class DatabaseObject {
   public function attributes() {
     $attributes = [];
     foreach(static::$db_columns as $column) {
-        if( $column == static::$id_name ) { continue; }
+        //if( $column == static::$id_name ) { continue; }
         $attributes[$column] = $this->$column;
     }
     return $attributes;

@@ -90,7 +90,7 @@ class Character extends Account {
         $this->class_type = $args['class_type'] ?? '';
         $this->free_company_rank_id = $args['free_company_rank_id'] ?? '';
         $this->free_company_rank_status = $args['free_company_rank_status'] ?? '';
-        $this->user_id = $args['user_id'] ?? '';
+        $this->user_id = $args['user_id'] ?? '1';
         $this->user_name = $args['user_name'] ?? '';
     }
 

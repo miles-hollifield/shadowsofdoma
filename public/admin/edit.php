@@ -28,8 +28,6 @@
         if(is_post_request()) {
 
           // Save record using post parameters
-          //$args = $_POST['character'];
-          //$result = false;
           $args = [];
           $args['game_character_first_name'] = $_POST['game_character_first_name'] ?? NULL;
           $args['game_character_last_name'] = $_POST['game_character_last_name'] ?? NULL;
