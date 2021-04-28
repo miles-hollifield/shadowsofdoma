@@ -127,7 +127,7 @@ class DatabaseObject {
     return $result;    
   }
 
-  protected function update() {
+  public function update() {
     $this->validate();
     if(!empty($this->errors)) { return false; }
 
@@ -139,9 +139,9 @@ class DatabaseObject {
 
     $id = static::$id_name;
 
-    $sql = "UPDATE " . static::$table_name . " SET ";
+    $sql = "UPDATE game_character SET ";
     $sql .= join(", ", $attribute_pairs);
-    $sql .= " WHERE " . static::$id_name . "=" . self::$database->quote($this->$id) . " ";
+    $sql .= " WHERE game_character_id = " . self::$database->quote($this->$id) . " ";
     $sql .= "LIMIT 1";
 
     $stmt = self::$database->prepare($sql);

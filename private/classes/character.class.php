@@ -1,6 +1,6 @@
 <?php
 
-class Character extends DatabaseObject {
+class Character extends Account {
     
     static protected $table_name = 'game_character';
     static protected $id_name = 'game_character_id';

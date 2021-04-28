@@ -15,13 +15,15 @@
 
       <?php
         $id = $_GET['id'] ?? '1'; // PHP > 7.0
-        $character = Account::fill_view($id);
+        $character = Character::fill_view($id);
       ?>
 
       <div id="main">
         <div id="main-container">
 
           <a class="back-link" href="<?php echo url_for('/admin/roster.php'); ?>">&laquo; Back to Roster</a>
+
+          <?php display_session_message(); ?>
 
           <div id="char-view">
 

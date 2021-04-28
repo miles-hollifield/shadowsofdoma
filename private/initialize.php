@@ -31,8 +31,8 @@
   include('classes/databaseobject.class.php');
   include('classes/admin.class.php');
   include('classes/session.class.php');
-  include('classes/character.class.php');
   include('classes/account.class.php');
+  include('classes/character.class.php');
 
   // Autoload class definitions
 

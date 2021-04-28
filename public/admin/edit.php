@@ -14,8 +14,46 @@
       </div>
 
       <?php
+
         $id = $_GET['id'] ?? '1'; // PHP > 7.0
-        $character = Account::fill_view($id);
+        $character = Character::fill_view($id);
+        if($character == false) {
+          redirect_to(url_for('/admin/roster.php'));
+        }
+
+        if(!isset($id)) {
+          redirect_to(url_for('/admin/index.php'));
+        }
+
+        if(is_post_request()) {
+
+          // Save record using post parameters
+          //$args = $_POST['character'];
+          //$result = false;
+          $args = [];
+          $args['game_character_first_name'] = $_POST['game_character_first_name'] ?? NULL;
+          $args['game_character_last_name'] = $_POST['game_character_last_name'] ?? NULL;
+          $args['gender_id'] = $_POST['gender_id'] ?? NULL;
+          $args['race_id'] = $_POST['race_id'] ?? NULL;
+          $args['class_id'] = $_POST['class_id'] ?? NULL;
+          $args['free_company_rank_id'] = $_POST['free_company_rank_id'] ?? NULL;
+          $result = false;
+          $character->merge_attributes($args);
+          $result = $character->update();
+
+          if($result == true) {
+            $_SESSION['message'] = 'The character was updated successfully.';
+            redirect_to(url_for('/admin/view.php?id=' . h(u($character->game_character_id))));
+          } else {
+            echo display_errors($character->errors);
+            // show errors
+          }
+
+        } else {
+          // display the form
+          
+        }
+
       ?>
 
       <div id="main">
