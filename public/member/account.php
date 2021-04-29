@@ -37,7 +37,7 @@
                 <th>Free Company Rank</th>
               </tr> 
 
-              <?php $acc_chars = Account::get_account_characters($user); ?>
+              <?php $acc_chars = Character::get_account_characters($user); ?>
 
               <?php foreach($acc_chars as $acc_char) { ?>
               <tr>
