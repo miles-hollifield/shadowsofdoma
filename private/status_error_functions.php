@@ -2,9 +2,7 @@
 
 function require_public() {
   global $session;
-  if($session->user_level == 'm') {
-    redirect_to(url_for('./member/index.php'));
-  } else if($session->user_level == 'a') {
+  if(isset($session->user_level)) {
     redirect_to(url_for('./admin/index.php'));
   }
 }
