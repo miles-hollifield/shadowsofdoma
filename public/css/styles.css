@@ -159,7 +159,6 @@ header nav li a {
 
 .index-item {
   border: 1px solid black;
-  background-color: rgb(255, 245, 213);
   margin: 5px;
   padding: 5px;
 }
@@ -241,6 +240,7 @@ header nav li a {
 
 #signup-container {
   border: 1px solid black;
+  background-color: white;
   text-align: center;
   max-width: 400px;
   margin: 5px auto;
@@ -282,6 +282,12 @@ header nav li a {
 #main-container {
   border: 1px solid black;
   background-color: rgb(255, 245, 213);
+  background-position: center;
+}
+
+.background {
+  background-image: url(../img/parchment-small.jpg);
+  background-position: center;
 }
 
 /* About Page */
@@ -289,16 +295,16 @@ header nav li a {
   margin: 1rem;
 }
 
-#casual div {
-  text-align: right;
-}
-
-#raiding div {
+#casual div>h2 {
   text-align: left;
 }
 
-#roleplay div {
-  text-align: right;
+#raiding div>h2 {
+  text-align: left;
+}
+
+#roleplay div>h2 {
+  text-align: left;
 }
 
 /* Roster */
@@ -375,7 +381,6 @@ footer {
 /* Modal Gallery */
 #gallery-grid {
   border: 1px solid black;
-  background-color: rgb(255, 245, 213);
   max-width: 1100x;
   padding: 15px;
   text-align: center;

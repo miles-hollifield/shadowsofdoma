@@ -14,7 +14,7 @@
       </div>
 
       <div id="main">
-        <div id="main-container" class="account-grid">
+        <div id="main-container" class="account-grid background">
           <?php
             $user = $_SESSION['user_name'];
             $account = Account::find_by_username($user); 

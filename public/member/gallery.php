@@ -17,7 +17,7 @@
 
         <script src="<?php echo url_for('../public/js/gallery.js'); ?>" defer></script>
         <!-- Thumbnail Gallery -->
-        <div id="gallery-grid">
+        <div class="background" id="gallery-grid">
           <div id="gallery-grid-container">
             <img id="img1" src="<?php echo url_for('/img/gallery/ff14-group-photo-small.jpg'); ?>" alt="Free Company Group Photo" width="345" height="194">
             <img id="img2" src="<?php echo url_for('/img/gallery/ff14-shadowbringers-small.jpg'); ?>" alt="Free Company Dungeon" width="345" height="194">

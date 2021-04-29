@@ -23,7 +23,7 @@
 
       <div id="index-section">
           <div id="index-item-1" class="index-item-container">
-            <div class="index-item">
+            <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/admin/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-fc-desk-small.png'); ?>" alt="Free Company Desk" width="360" height="202"></a>
               </div>
@@ -36,7 +36,7 @@
           </div>
           
           <div id="index-item-2" class="index-item-container">
-            <div class="index-item">
+            <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/admin/staff.php'); ?>"><img id="img2" class="responsive" src="<?php echo url_for('/img/ff14-beach-small.png'); ?>" alt="Free Company Beach Photo" width="359" height="202"></a>
               </div>
@@ -49,7 +49,7 @@
           </div>
           
           <div id="index-item-3" class="index-item-container">
-            <div class="index-item">
+            <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/admin/roster.php'); ?>"><img id="img3" class="responsive" src="<?php echo url_for('/img/ff14-board-small.jpg'); ?>" alt="Free Company Group Photo" width="359" height="202"></a>
               </div>
