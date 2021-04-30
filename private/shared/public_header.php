@@ -28,15 +28,19 @@
           <a href="index.php"><img src="img/ff14-guild-crest.png" alt="Crest" width="150" height="155"></a>
         </div>
       </div>
-      <nav>
-        <ul>
-          <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="index.php">Home</a></li>
-          <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="about.php">About Us</a></li>
-          <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="staff.php">Meet Our Staff</a></li>
-          <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="gallery.php">Gallery</a></li>
-          <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="roster.php">Roster</a></li>
-          <li><a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a></li>
-        </ul>
+      <nav id="navbar">
+        <a class="<?php if($page == "home") { echo "current"; } ?>" href="index.php">Home</a>
+        <a class="<?php if($page == "about") { echo "current"; } ?>" href="about.php">About Us</a>
+        <a class="<?php if($page == "staff") { echo "current"; } ?>" href="staff.php">Meet Our Staff</a>
+        <a class="<?php if($page == "gallery") { echo "current"; } ?>" href="gallery.php">Gallery</a>
+        <a class="<?php if($page == "roster") { echo "current"; } ?>" href="roster.php">Roster</a>
+        <a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" value="GO">GO</button>
+          </form>
+        </div>
       </nav>
     </header>
     <div id="wrapper">

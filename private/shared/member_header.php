@@ -25,16 +25,20 @@
           <a href="index.php"><img src="<?php echo url_for('img/ff14-guild-crest.png'); ?>" alt="Crest" width="150" height="155"></a>
         </div>
       </div>
-      <nav>
-        <ul>
-          <li><a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/member/index.php">Home</a></li>
-          <li><a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/member/about.php">About Us</a></li>
-          <li><a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/member/staff.php">Meet Our Staff</a></li>
-          <li><a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a></li>
-          <li><a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a></li>
-          <li><a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a></li>
-          <li><a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a></li>
-        </ul>
+      <nav id="navbar">
+        <a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/member/index.php">Home</a>
+        <a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/member/about.php">About Us</a>
+        <a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/member/staff.php">Meet Our Staff</a>
+        <a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/member/gallery.php">Gallery</a>
+        <a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/member/roster.php">Roster</a>
+        <a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/member/account.php">Account</a>
+        <a href="../../public/member/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" value="GO">GO</button>
+          </form>
+        </div>
       </nav>
     </header>
     <div id="wrapper">

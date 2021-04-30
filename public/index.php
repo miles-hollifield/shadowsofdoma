@@ -19,7 +19,7 @@
         <img src="<?php echo url_for('/img/ff14-free-company.jpg'); ?>" alt="House" width="1190" height="742">
       </div>
 
-
+      <!-- 3 Calls to Action -->
 
       <div id="index-section">
           <div id="index-item-1" class="index-item-container">
