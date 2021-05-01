@@ -2,8 +2,8 @@
 
 function require_public() {
   global $session;
-  if(isset($session->user_level)) {
-    redirect_to(url_for('./admin/index.php'));
+  if(!isset($session->user_level)) {
+    // Do nothing
   }
 }
 
