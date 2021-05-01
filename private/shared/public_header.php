@@ -12,7 +12,7 @@
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/modal.css'); ?>" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <header>
@@ -37,7 +37,7 @@
           <a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a>
         <?php } ?>
         <div class="search-container">
-          <form action="/action_page.php">
+          <form action="search.php">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit" value="GO">GO</button>
           </form>

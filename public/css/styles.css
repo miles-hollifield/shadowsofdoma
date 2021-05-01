@@ -248,13 +248,9 @@ header img {
   text-decoration: none;
 }
 
-#recaptcha-container {
-  border: 2px solid black;
-}
-
 .g-recaptcha {
-  display: inline;
-  text-align: right;
+  display: block;
+  float: left;
 }
 /* Sign Up Page */
 #signup {

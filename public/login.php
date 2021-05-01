@@ -55,21 +55,22 @@
         }
 
         ?>
+
         <div id="main-container">
           <div id="login">
             <p>Enter your login information below:</p>
             <div id="login-container">
-              <?php echo display_errors($errors); ?>
 
+              <?php echo display_errors($errors) ?>
+              
               <form class="form" action="login.php" method="post">
-                <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br />
-                <input class="user-input" type="password" name="password" value="" placeholder="Password"><br />
-                <input class="button-style button-link-style" type="submit" name="submit" value="Log In"  />
+                <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br>
+                <input class="user-input" type="password" name="password" value="" placeholder="Password"><br>
+                <div class="g-recaptcha" data-callback="callback" data-sitekey="6LdvBMEaAAAAAK81OIdaeOzBD9ikRQDTkJnyYE4L"></div>
+                <input class="button-style button-link-style" type="submit" name="submit" value="Log In">
               </form>
 
-              <div id="recaptcha-container">
-                <div class="g-recaptcha" data-sitekey="6LftO7saAAAAAAB0trqQyVmyHUgbrvgLJEgx4QfN"></div>
-              </div>
+              
                         
               <p>Don't have an account?<br>
               <a id="signup-link" href="signup.php">Sign Up</a></p>
