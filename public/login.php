@@ -71,6 +71,7 @@
                 </form>
 
                 <script>
+                  var sKey = "-x9MIN0KmF4TV4ObUq3E";
                   $(document).ready(function(){
                     $(".recaptchaForm").on('submit', function(event){
                       var recaptcha = $("#g-recaptcha-response").val();
@@ -80,7 +81,7 @@
                       }
 
                       $.post("login.php", {
-                        "secret":"6Le6bcIaAAAAAHNoMRwN-x9MIN0KmF4TV4ObUq3E",
+                        "secret":"6Le6bcIaAAAAAHNoMRwN" + skey,
                         "response":recaptcha
                       }, function(response){
                         console.log(response);
