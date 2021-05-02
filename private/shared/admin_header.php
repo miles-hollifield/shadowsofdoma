@@ -1,4 +1,5 @@
 <?php
+  require_once('../../private/initialize.php');
   require_admin();
 ?>
 
@@ -34,8 +35,8 @@
         <a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/admin/account.php">Account</a>
         <a href="../../public/admin/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a>
         <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
+          <form action="search.php" method="get">
+            <input type="text" placeholder="Search Character..." name="search">
             <button type="submit" value="GO">GO</button>
           </form>
         </div>

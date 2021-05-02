@@ -1,4 +1,5 @@
 <?php
+  require_once('../private/initialize.php');
   if(!isset($page)) {
     $page = '';
   }
@@ -38,8 +39,8 @@
           <a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a>
         <?php } ?>
         <div class="search-container">
-          <form action="search.php">
-            <input type="text" placeholder="Search.." name="search">
+          <form action="search.php" method="get">
+            <input type="text" placeholder="Search Character..." name="search">
             <button type="submit" value="GO">GO</button>
           </form>
         </div>
