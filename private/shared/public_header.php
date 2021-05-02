@@ -10,9 +10,12 @@
   <head>
     <meta charset="utf-8">
     <title><?php if(isset($pageTitle)) { echo h($pageTitle) . ' - '; } ?>Shadows of Doma</title>
+    <link href="<?php echo url_for('../public/css/general.css') ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
+    <link href="<?php echo url_for('../public/css/responsive.css') ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/modal.css'); ?>" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>

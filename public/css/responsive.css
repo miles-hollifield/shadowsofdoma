@@ -1,0 +1,11 @@
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 27px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 425px) {
+
+}

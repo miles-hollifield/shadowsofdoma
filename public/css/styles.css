@@ -1,171 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Mono&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font: 16px 'Roboto Mono', monospace;
-}
-
-body {
-  /*background-image: url(../img/ff14-background.jpg);
-  background-position: center; */
-  background-color: rgb(37, 37, 37);
-  margin: 0 auto;
-}
-
-#wrapper {
-  margin: 0 auto;
-  width: 1200px;
-  height: 100%;
-}
-
-/* Header CSS*/
-
-#masthead {
-  padding: 5px;
-  background-color: white;
-}
-
-#header-img {
-  background-color: rgb(10, 9, 10);
-}
-
-#header-title {
-  position: relative;
-  display: block;
-  text-align: center;
-  padding: 5px;
-  color: white;
-  font-size: 30px;
-  line-height: 5px;
-}
-
-#header-title a {
-  text-decoration: none;
-  color: white;
-}
-
-h1 {
-  font-family: 'PT Serif', serif;
-}
-
-header img {
-  display: block;
-  margin: auto;
-  padding: 10px
-}
-
-/* Nav Bar */
-
-#navbar {
-  background-color: #3b3632;
-  overflow: hidden;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#navbar a:hover {
-  background-color: #282828;
-}
-
-.current {
-  background-color: #282828;
-}
-
-#navbar .search-container {
-  float: right;
-}
-
-#navbar input[type=text] {
-  padding: 6px;
-  margin-top: 10px;
-  font-size: 16px;
-  border: none;
-}
-
-#navbar .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 10px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-#navbar .search-container button:hover {
-  background: #ccc;
-}
-
-/* Messages to User */
-
-#message {
-  background-color: #000;
-  color: rgb(44, 221, 44);
-  border: 1px solid #000;
-  margin: 10px auto;
-  padding: 10px;
-  text-align: center;
-}
-
-.errors {
-  margin: 0 auto;
-  color: red;
-  text-align: center;
-  max-width: 500px;
-}
-
-.errors ul {
-  text-align: left;
-}
-
-.user-input {
-  padding: 5px;
-  margin: 3px;
-}
-
-/* Top Content */
-
-#content-wrapper {
-  margin-top: 10px;
-  padding: 5px;
-  background-color: white;
-}
-
-#content-top {
-  background-image: url(../img/wooden-bg.jpg);
-  background-position: top;
-}
-
-#content-top-text {
-  color: white;
-  padding: 20px;
-}
-
-#content-top-text h1 {
-  text-align: center;
-}
-
-#content-top-text p {
-  max-width: 900px;
-  margin: 10px auto;
-  text-align: left;
-}
-
-.center {
-  text-align: center !important;
-}
 
 /* Index Page */
 #index-section {
@@ -210,6 +42,12 @@ header img {
 
 .learn a:hover {
   background-color: #282828;
+}
+
+#page-img-wrapper {
+  padding: 5px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 /* Login Page */
@@ -283,31 +121,6 @@ header img {
   width: 200px;
 }
 
-/* Page Img */
-#page-img-wrapper {
-  padding: 5px;
-  background-color: white;
-  margin-top: 10px;
-}
-
-/* Main Page Content */
-#main {
-  margin-top: 10px;
-  background-color: white;
-  padding: 5px;
-}
-
-#main-container {
-  border: 1px solid black;
-  background-color: rgb(255, 245, 213);
-  background-position: center;
-}
-
-.background {
-  background-image: url(../img/parchment-small.jpg);
-  background-position: center;
-}
-
 /* About Page */
 .section div {
   margin: 1rem;
@@ -325,7 +138,7 @@ header img {
   text-align: left;
 }
 
-/* Roster */
+/* Roster Page */
 #roster-table {
   margin: 10px auto;
   border: 1px solid black;
@@ -386,16 +199,6 @@ header img {
   text-align: right;
 }
 
-/* Footer */
-footer {
-  background-color: #3b3632;
-  color: #fff;
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: center;
-  height: 100%;
-}
-
 /* Modal Gallery */
 #gallery-grid {
   border: 1px solid black;
@@ -420,14 +223,3 @@ footer {
   padding: 5px;
   cursor: pointer;
 }
-
-.responsive {
-  height: auto;
-  max-width: 100%;
-}
-
-
-
-
-
-
