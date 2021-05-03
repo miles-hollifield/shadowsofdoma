@@ -26,7 +26,7 @@
                   echo "<p style='margin: 10px; text-align: center;'>Please enter a search query.</p>";
               } else if($characters != false) {?>
                 <h2>Search results for: <?php echo $search; ?></h2>
-                <table id="roster-table">
+                <table class="background" id="search-table">
                   <tr>
                     <th>Character First Name</th>
                     <th>Character Last Name</th>

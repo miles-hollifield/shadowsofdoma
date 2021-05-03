@@ -67,7 +67,7 @@
                   <input class="user-input" type="text" name="user_name" value="<?php echo h($user_name); ?>" placeholder="Username"><br>
                   <input class="user-input" type="password" name="password" value="" placeholder="Password"><br>
                   <div class="g-recaptcha" data-callback="callback" data-sitekey="6LdvBMEaAAAAAK81OIdaeOzBD9ikRQDTkJnyYE4L"></div>
-                  <input class="button-style button-link-style" type="submit" name="submit" value="Log In">
+                  <input class="button-style" type="submit" name="submit" value="Log In">
                 </form>
 
                 <script>

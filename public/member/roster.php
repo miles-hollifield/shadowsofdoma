@@ -14,8 +14,8 @@
       </div>
 
       <div id="main">
-        <div class="background" id="main-container">
-          <table id="roster-table">
+        <div id="main-container">
+          <table class="background" id="roster-table">
             <tr>
               <th>Character First Name</th>
               <th>Character Last Name</th>

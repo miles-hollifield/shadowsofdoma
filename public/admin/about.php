@@ -18,7 +18,7 @@
       </div>
       
       <div id="main">
-        <div class="background" id="main-container">
+        <div id="main-container">
           <div class="section" id="casual">
             <img src="<?php echo url_for('/img/final-fantasy-xiv-blade.jpg'); ?>" alt="Character" width="548" height="308">
             <div>

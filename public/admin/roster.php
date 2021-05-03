@@ -14,9 +14,9 @@
       </div>
 
       <div id="main">
-        <div class="background" id="main-container">
+        <div id="main-container">
           <a class="action" href="<?php echo url_for('/admin/new.php'); ?>">Add Character</a>
-          <table id="roster-table">
+          <table class="background" id="roster-table">
             <tr>
               <th>ID</th>
               <th>Character First Name</th>

@@ -14,7 +14,7 @@
       </div>
 
       <div id="main">
-        <div id="main-container" class="account-grid background">
+        <div id="main-container" class="account-grid">
           <?php
             $user = $_SESSION['user_name'];
             $account = Account::find_by_username($user); 
@@ -27,7 +27,7 @@
 
           <div id="user-chars">
             <p>Characters Owned by <?php echo $session->user_name; ?>: </p>
-            <table id="account-table">
+            <table class="background" id="account-table">
               <tr>
                 <th>Character First Name</th>
                 <th>Character Last Name</th>

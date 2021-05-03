@@ -5,6 +5,11 @@
 }
 .index-item-container {
   background-color: white;
+  font-size: 1vw;
+}
+
+.index-item-container-mobile {
+  display: none;
 }
 
 .index-item {
@@ -17,27 +22,25 @@
   margin: 30px;
 }
 
-#index-item-1 {
+#index-item-1, #index-item-2 {
   margin-right: 5px;
 }
 
-#index-item-2 {
+#index-item-2, #index-item-3 {
   margin-left: 5px;
-  margin-right: 5px;
 }
 
-#index-item-3 {
-  margin-left: 5px;
+.item-img, .learn {
+  text-align: center;
 }
 
 .item-img {
   margin: 0 auto;
-  text-align: center;
 }
 
 .learn {
-  margin: 20px auto;
-  text-align: center;
+  margin: 10px auto;
+  font-size: 1vw;
 }
 
 .learn a:hover {
@@ -48,6 +51,7 @@
   padding: 5px;
   background-color: white;
   margin-top: 10px;
+  max-width: 1200px;
 }
 
 /* Login Page */
@@ -71,24 +75,6 @@
   color: black;
 }
 
-.button-style {
-  background-color: #504741;
-  border: 1px solid black;
-  padding: 10px 80px 10px 80px;
-  margin: 1em;
-  text-align: center;
-}
-
-.button-link-style {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.g-recaptcha {
-  display: block;
-  float: left;
-}
 /* Sign Up Page */
 #signup {
   display: inline;
@@ -97,12 +83,11 @@
 #signup-container {
   border: 1px solid black;
   background-color: white;
-  text-align: center;
   max-width: 400px;
   margin: 5px auto;
 }
 
-#signup p {
+#signup-container, #signup p {
   text-align: center;
 }
 
@@ -111,7 +96,6 @@
 }
 
 .form input {
-  width: 200px;
   font-size: 1rem;
 }
 
@@ -122,19 +106,15 @@
 }
 
 /* About Page */
-.section div {
-  margin: 1rem;
+#casual div, #raiding div, #roleplay div {
+  margin: 2rem;
 }
 
-#casual div>h2 {
-  text-align: left;
+#casual img, #raiding img, #roleplay img {
+  margin: 2rem;
 }
 
-#raiding div>h2 {
-  text-align: left;
-}
-
-#roleplay div>h2 {
+#casual div>h2, #raiding div>h2, #roleplay div>h2 {
   text-align: left;
 }
 
@@ -144,12 +124,7 @@
   border: 1px solid black;
 }
 
-#roster-table th {
-  border: 1px solid black;
-  padding: 5px;
-}
-
-#roster-table td {
+#roster-table th, #roster-table td {
   border: 1px solid black;
   padding: 5px;
 }
@@ -164,39 +139,26 @@
   margin: 10px;
 }
 
-#account-table {
+#account-table, #account-table th, #account-table td {
   border: 1px solid black;
 }
 
-#account-table th {
-  border: 1px solid black;
+#account-table th, #account-table td {
   padding: 5px;
 }
 
-#account-table td {
-  border: 1px solid black;
-  padding: 5px;
-}
 /* Staff Page */
-
-#main h2 {
+.staff-heading {
+  margin: 2rem;
   text-align: center;
 }
 
-#leader {
-  text-align: right;
+.staff-character>div {
+  margin: 2rem;
 }
 
-.staff-heading {
-  margin: 3rem;
-}
-
-.section img {
-  margin: 1rem;
-}
-
-.right-align {
-  text-align: right;
+.staff-character>img {
+  margin: 2rem;
 }
 
 /* Modal Gallery */
@@ -222,4 +184,19 @@
   margin: 5px;
   padding: 5px;
   cursor: pointer;
+}
+
+/* Search Page */
+#search-results h2 {
+  text-align: center;
+}
+
+#search-table {
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+#search-table th, #search-table td {
+  border: 1px solid black;
+  padding: 5px;
 }

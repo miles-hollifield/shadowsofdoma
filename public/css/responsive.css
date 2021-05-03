@@ -1,11 +1,17 @@
 /* Tablet View */
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 27px;
-  }
+  /* Enter CSS here */
 }
 
 /* Mobile View */
-@media screen and (max-width: 425px) {
-
+@media screen and (max-width: 594px) {
+  .index-item-container {
+    display: none;
+  }
+  .index-item-container-mobile {
+    display: block;
+  }
+  .button-style {
+    font-size: 16px;
+  }
 }
