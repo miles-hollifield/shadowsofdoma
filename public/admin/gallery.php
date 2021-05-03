@@ -2,7 +2,7 @@
   require_once('../../private/initialize.php');
   $page = 'gallery';
   $pageTitle = 'Gallery';
-  include(SHARED_PATH . '/admin_header.php');;
+  include(SHARED_PATH . '/admin_header.php');
 ?>
       
       <div id="content-wrapper">
