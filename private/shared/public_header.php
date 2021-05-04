@@ -43,6 +43,23 @@
           </form>
         </div>
       </nav>
+      <!-- Mobile -->
+      <nav id="navbar-2" class="mobile">
+        <a class="<?php if($page == "home") { echo "current"; } ?>" href="index.php">Home</a>
+        <a class="<?php if($page == "about") { echo "current"; } ?>" href="about.php">About Us</a>
+        <a class="<?php if($page == "staff") { echo "current"; } ?>" href="staff.php">Meet Our Staff</a>
+        <a class="<?php if($page == "gallery") { echo "current"; } ?>" href="gallery.php">Gallery</a>
+        <a class="<?php if($page == "roster") { echo "current"; } ?>" href="roster.php">Roster</a>
+        <?php if($page !== '404') { ?>
+          <a class="<?php if($page == "login" || $page == "signup") { echo "current"; } ?>" href="login.php">Log in/Register</a>
+        <?php } ?>
+        <div class="search-container">
+          <form action="search.php" method="get">
+            <input type="text" placeholder="Search Character..." name="search">
+            <button type="submit" value="GO">GO</button>
+          </form>
+        </div>
+      </nav>
     </header>
     <div id="wrapper">
 

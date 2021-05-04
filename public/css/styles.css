@@ -58,6 +58,16 @@
 }
 
 /* About Page */
+#raiding div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+#raiding img {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
 #casual div h2, #raiding div h2, #roleplay div h2 {
   text-decoration: underline;
 }
@@ -75,6 +85,46 @@
 }
 
 /* Staff Page */
+#council-1 div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+#council-1 img {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+#council-3 div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+#council-3 img {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+#officer-2 div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+#officer-2 img {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+#officer-4 div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+#officer-4 img {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
 .staff-heading {
   margin: 2rem;
   text-align: center;
@@ -121,6 +171,7 @@
 /* Roster Page */
 #roster-table {
   border: 1px solid #000;
+  font-size: 1.2vw;
   margin: 10px auto;
 }
 

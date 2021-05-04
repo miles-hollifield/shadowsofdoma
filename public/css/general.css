@@ -6,7 +6,7 @@
 }
 
 html {
-  font: 1.5vw 'PT Serif', serif;
+  font: 18px 'PT Serif', serif;
 }
 
 body {
@@ -141,12 +141,13 @@ header {
 }
 
 #content-top-text h1 {
+  font-size: 2.5vw;
   text-align: center;
 }
 
 #content-top-text p {
-  font-family: 'Roboto Mono', monospace;
-  margin: 10px auto;
+  font: 1.2vw 'Roboto Mono', monospace;
+  margin: 20px auto;
   max-width: 70vw;
   padding: 10px;
   text-align: left;

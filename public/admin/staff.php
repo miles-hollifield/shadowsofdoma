@@ -39,12 +39,13 @@
           </div>
 
           <!--------- Council Members -------->
-          <div class="staff-heading">
+          <div id="council-1" class="staff-heading">
             <hr>
             <h2>Council Members</h2>
             <hr>
           </div>
           <div class="section staff-character">
+            <img src="<?php echo url_for('/img/staff/ff14-council-1.jpg'); ?>" alt="Gloria Vidar" width="340" height="570">
             <div>
               <h3>Gloria Vidar</h3>
               <p>
@@ -57,10 +58,9 @@
                 <q>Since a little before Stormblood. A friend got me into it.</q>
               </p>
             </div>
-            <img src="<?php echo url_for('/img/staff/ff14-council-1.jpg'); ?>" alt="Gloria Vidar" width="340" height="570">
           </div>
 
-          <div class="section staff-character">
+          <div id="council-2" class="section staff-character">
             <img src="<?php echo url_for('/img/staff/ff14-council-2.jpg'); ?>" alt="Marco Wrynn" width="436" height="560">
             <div class="right-align">
               <h3>Marco Wrynn</h3>
@@ -76,7 +76,8 @@
             </div>
           </div>
 
-          <div class="section staff-character">
+          <div id="council-3" class="section staff-character">
+            <img src="<?php echo url_for('/img/staff/ff14-council-3.jpg'); ?>" alt="Lukas Reeves" width="340" height="570">
             <div>
               <h3>Lukas Reeves</h3>
               <p>
@@ -89,11 +90,10 @@
                 <q>Been playing since Stormblood, initially picked up the game when it was on sale during Christmas on PS4 and eventually moved to PC. I’ve always loved Final Fantasy Games in general.</q>
               </p>
             </div>
-            <img src="<?php echo url_for('/img/staff/ff14-council-3.jpg'); ?>" alt="Lukas Reeves" width="340" height="570">
           </div>
 
           <!----------- Officers --------------->
-          <div class="staff-heading">
+          <div id="officer-1" class="staff-heading">
             <hr>
             <h2>Officers</h2>
             <hr>
@@ -114,7 +114,8 @@
             </div>
           </div>
 
-          <div class="section staff-character">
+          <div id="officer-2" class="section staff-character">
+            <img src="<?php echo url_for('/img/staff/ff14-officer-2.jpg'); ?>" alt="Alfred Galar" width="498" height="594">
             <div>
               <h3>Alfred Galar</h3>
               <p>
@@ -127,10 +128,9 @@
                 <q>I think I’ve been playing for 7 months? Not sure, my friends got me into the game.</q>
               </p>
             </div>
-            <img src="<?php echo url_for('/img/staff/ff14-officer-2.jpg'); ?>" alt="Alfred Galar" width="498" height="594">
           </div>
 
-          <div class="section staff-character">
+          <div id="officer-3" class="section staff-character">
             <img src="<?php echo url_for('/img/staff/ff14-officer-3.jpg'); ?>" alt="Aleidis Westmoore" width="340" height="570">
             <div class="right-align">
               <h3>Aleidis Westmoore</h3>
@@ -146,7 +146,8 @@
             </div>
           </div>
 
-          <div class="section staff-character">
+          <div id="officer-4" class="section staff-character">
+            <img src="<?php echo url_for('/img/staff/ff14-officer-4.jpg'); ?>" alt="Yuki Nawashiro" width="340" height="570">
             <div>
               <h3>Yuki Nawashiro</h3>
               <p>
@@ -159,10 +160,9 @@
                 <q>I was originally a beta tester for ARR several years ago. I was interested in playing back then but didn’t have my own PC. I always wanted to get into this game enjoying the beta and loving older FF titles but was big into other games for a while such as Splatoon and Overwatch.</q>
               </p>
             </div>
-            <img src="<?php echo url_for('/img/staff/ff14-officer-4.jpg'); ?>" alt="Yuki Nawashiro" width="340" height="570">
           </div>
 
-          <div class="section staff-character">
+          <div id="officer-5" class="section staff-character">
             <img src="<?php echo url_for('/img/staff/ff14-officer-5.jpg'); ?>" alt="Aang Jopino" width="340" height="570">
             <div class="right-align">
               <h3>Aang Jopino</h3>

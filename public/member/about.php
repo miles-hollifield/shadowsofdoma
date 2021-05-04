@@ -27,11 +27,11 @@
             </div>
           </section>
           <section class="section" id="raiding">
+            <img src="<?php echo url_for('/img/ff14-raiding.jpg'); ?>" alt="Raiding" width="548" height="308">
             <div>
               <h2>Raiding</h2>
               <p>We do weekly runs of any fresh 24 person content as an FC! While we don’t have an official team for 8 person content, we do provide a space for you to find like minded people so you can make friends and form your own!</p>
             </div>
-            <img src="<?php echo url_for('/img/ff14-raiding.jpg'); ?>" alt="Raiding" width="548" height="308">
           </section>
           <section class="section" id="roleplay">
             <img src="<?php echo url_for('/img/ff14-roleplay.jpg'); ?>" alt="Rolepay" width="582" height="308">

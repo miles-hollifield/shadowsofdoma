@@ -1,9 +1,203 @@
 /* Tablet View */
-@media screen and (max-width: 768px) {
-  /* Enter CSS here */
+@media screen and (max-width: 808px) {
+  html {
+    font-size: 16px;
+  }
+
+  #header-title {
+    font-size: 18px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #navbar-2 {
+    background-color: #3d3834;
+    overflow: hidden;
+    display: block;
+
+  }
+  
+  #navbar-2 a {
+    border-right: 1px solid rgb(27, 27, 27);
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  #navbar-2 .search-container {
+    text-align: center;
+  }
+
+  #content-top-text h1 {
+    font-size: 28px;
+  }
+
+  #content-top-text p {
+    font-size: 18px;
+  }
+
+  #index-section-1 {
+    display: none;
+  }
+
+  #index-section-2 {
+    display: block;
+  }
+
+  #index-item-1, #index-item-2, #index-item-3 {
+    margin: 5px auto;
+  }
+
+  .index-item {
+    margin: 0;
+  }
+  .index-item h2 {
+    font-size: 24px;
+  }
+
+  .index-item p {
+    font-size: 16px;
+  }
+
+  .button-style {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  .section {
+    display: block;
+  }
+
+  .section img {
+    margin: 0 auto;
+  }
+
+  #roster-table {
+    font-size: 1.5vw;
+  }
+  .account-grid {
+    display: block;
+  }
+
+  #account-table {
+    font-size: 2vw;
+  }
+
+  #search-table {
+    font-size: 2vw;
+  }
+
+  #user-info {
+    border: none;
+  }
+
 }
 
 /* Mobile View */
-@media screen and (max-width: 594px) {
+@media screen and (max-width: 645px) {
+  html {
+    font-size: 16px;
+  }
+
+  #header-title {
+    font-size: 18px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #navbar-2 {
+    background-color: #3d3834;
+    overflow: hidden;
+    display: block;
+
+  }
   
+  #navbar-2 a {
+    border-right: 1px solid rgb(27, 27, 27);
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  #navbar-2 .search-container {
+    text-align: center;
+  }
+
+  #content-top-text h1 {
+    font-size: 28px;
+  }
+
+  #content-top-text p {
+    font-size: 18px;
+  }
+
+  #index-section-1 {
+    display: none;
+  }
+
+  #index-section-2 {
+    display: block;
+  }
+
+  #index-item-1, #index-item-2, #index-item-3 {
+    margin: 5px auto;
+  }
+
+  .index-item {
+    margin: 0;
+  }
+  .index-item h2 {
+    font-size: 24px;
+  }
+
+  .index-item p {
+    font-size: 16px;
+  }
+
+  .button-style {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  .section {
+    display: block;
+  }
+
+  .section img {
+    height: auto;
+    max-width: 85%;
+    text-align: center;
+  }
+
+  #roster-table {
+    font-size: 1.5vw;
+  }
+
+  #account-table {
+    font-size: 2vw;
+  }
+
+  #search-table {
+    font-size: 1.8vw;
+  }
 }

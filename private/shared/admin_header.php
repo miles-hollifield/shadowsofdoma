@@ -39,6 +39,22 @@
           </form>
         </div>
       </nav>
+      <!-- Mobile -->
+      <nav id="navbar-2" class="mobile">
+        <a class="<?php if($page == "home") { echo "current"; } ?>" href="../../public/admin/index.php">Home</a>
+        <a class="<?php if($page == "about") { echo "current"; } ?>" href="../../public/admin/about.php">About Us</a>
+        <a class="<?php if($page == "staff") { echo "current"; } ?>" href="../../public/admin/staff.php">Meet Our Staff</a>
+        <a class="<?php if($page == "gallery") { echo "current"; } ?>" href="../../public/admin/gallery.php">Gallery</a>
+        <a class="<?php if($page == "roster") { echo "current"; } ?>" href="../../public/admin/roster.php">Roster</a>
+        <a class="<?php if($page == "account") { echo "current"; } ?>" href="../../public/admin/account.php">Account</a>
+        <a href="../../public/admin/logout.php" onclick="return confirm('Are you sure you want to logout?');">Log Out <?php echo $session->user_name; ?></a>
+        <div class="search-container">
+          <form action="search.php" method="get">
+            <input type="text" placeholder="Search Character..." name="search">
+            <button type="submit" value="GO">GO</button>
+          </form>
+        </div>
+      </nav>
     </header>
     <div id="wrapper">
 
