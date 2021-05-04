@@ -28,7 +28,7 @@
           <section id="index-item-1" class="index-item-container">
             <div class="index-item background">
               <div class="item-img">
-                <a href="<?php echo url_for('/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-fc-desk-small.png'); ?>" alt="Free Company Desk" width="360" height="202"></a>
+                <a href="<?php echo url_for('/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-welcome.jpg'); ?>" alt="Free Company Welcome" width="360" height="202"></a>
               </div>
               <h2 class="center">About the Free Company</h2>
               <p>Shadows of Doma is a Free Company (guild) in the MMORPG game Final Fantasy XIV on Sargatanas server! Shadows of Doma is a social FC for the friendly and considerate, those looking to expand their...</p>

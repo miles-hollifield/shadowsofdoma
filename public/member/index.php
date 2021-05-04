@@ -31,7 +31,7 @@
         <section id="index-item-1" class="index-item-container">
           <div class="index-item background">
             <div class="item-img">
-              <a href="<?php echo url_for('/member/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-fc-desk-small.png'); ?>" alt="Free CompanyDesk" width="360" height="202"></a>
+              <a href="<?php echo url_for('/member/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-welcome.jpg'); ?>" alt="Free Company Welcome" width="360" height="202"></a>
             </div>
             <h2 class="center">About the Free Company</h2>
             <p>Shadows of Doma is a Free Company (guild) in the MMORPG game Final Fantasy XIV on Sargatanas server! Shadows of Doma is a social FC for the friendly and considerate,those looking to expand their...</p>
@@ -44,7 +44,7 @@
         <section id="index-item-2" class="index-item-container">
           <div class="index-item background">
             <div class="item-img">
-              <a href="<?php echo url_for('/member/staff.php'); ?>"><img id="img2" class="responsive" src="<?php echo url_for('/img/ff14-beach-small.png'); ?>" alt="Free CompanyBeach Photo" width="359" height="202"></a>
+              <a href="<?php echo url_for('/member/staff.php'); ?>"><img id="img2" class="responsive" src="<?php echo url_for('/img/ff14-beach-small.png'); ?>" alt="Free Company Beach Photo" width="359" height="202"></a>
             </div>
             <h2 class="center">Meet Our Staff</h2>
             <p>Questions, comments, or concerns? Our Leadership Team is here to help! Be it big or small, our Council and Officer members are here to make sure you have the bestexperience possible during your..</p>
@@ -57,7 +57,7 @@
         <section id="index-item-3" class="index-item-container">
           <div class="index-item background">
             <div class="item-img">
-              <a href="<?php echo url_for('/member/roster.php'); ?>"><img id="img3" class="responsive" src="<?php echo url_for('/img/ff14-board-small.jpg'); ?>" alt="Free CompanyGroup Photo" width="359" height="202"></a>
+              <a href="<?php echo url_for('/member/roster.php'); ?>"><img id="img3" class="responsive" src="<?php echo url_for('/img/ff14-board-small.jpg'); ?>" alt="Free Company Group Photo" width="359" height="202"></a>
             </div>
             <h2 class="center">The Roster</h2>
             <p>Here you'll find a list of our guildmates! Every one from our new recruits to our guildmaster is listed on this page. Our rankings in the guild determine yourwillingness to participate in our guild...</p>
