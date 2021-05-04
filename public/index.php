@@ -17,15 +17,15 @@
         </div>
       </div>
       
-      <div id="page-img-wrapper">
+      <main id="page-img-wrapper">
         <img class="responsive" src="<?php echo url_for('/img/ff14-free-company.jpg'); ?>" alt="House" width="1190" height="742">
-      </div>
+      </main>
 
       <!--------------------- 3 Calls to Action ------------------------->
 
-        <div id="index-section">
+        <article class="index-section">
 
-          <div id="index-item-1" class="index-item-container">
+          <section id="index-item-1" class="index-item-container">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-fc-desk-small.png'); ?>" alt="Free Company Desk" width="360" height="202"></a>
@@ -36,9 +36,9 @@
                 <a class="button-style" href="<?php echo url_for('/about.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
           
-          <div id="index-item-2" class="index-item-container">
+          <section id="index-item-2" class="index-item-container">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/staff.php'); ?>"><img id="img2" class="responsive" src="<?php echo url_for('/img/ff14-beach-small.png'); ?>" alt="Free Company Beach Photo" width="359" height="202"></a>
@@ -49,9 +49,9 @@
                 <a class="button-style" href="<?php echo url_for('/staff.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
           
-          <div id="index-item-3" class="index-item-container">
+          <section id="index-item-3" class="index-item-container">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/roster.php'); ?>"><img id="img3" class="responsive" src="<?php echo url_for('/img/ff14-board-small.jpg'); ?>" alt="Free Company Group Photo" width="359" height="202"></a>
@@ -62,13 +62,15 @@
                 <a class="button-style" href="<?php echo url_for('/roster.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
           
-        </div>
+        </article>
 
         <!---------------------------- Mobile ----------------------------->
+        
+        <article class="index-section mobile">
 
-          <div id="index-item-1" class="index-item-container-mobile">
+          <section id="index-item-1">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/about.php'); ?>"><img id="img1" class="responsive" src="<?php echo url_for('/img/ff14-fc-desk-small.png'); ?>" alt="Free Company Desk" width="360" height="202"></a>
@@ -79,9 +81,9 @@
                 <a class="button-style" href="<?php echo url_for('/about.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
           
-          <div id="index-item-2" class="index-item-container-mobile">
+          <section id="index-item-2">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/staff.php'); ?>"><img id="img2" class="responsive" src="<?php echo url_for('/img/ff14-beach-small.png'); ?>" alt="Free Company Beach Photo" width="359" height="202"></a>
@@ -92,9 +94,9 @@
                 <a class="button-style" href="<?php echo url_for('/staff.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
           
-          <div id="index-item-3" class="index-item-container-mobile">
+          <section id="index-item-3">
             <div class="index-item background">
               <div class="item-img">
                 <a href="<?php echo url_for('/roster.php'); ?>"><img id="img3" class="responsive" src="<?php echo url_for('/img/ff14-board-small.jpg'); ?>" alt="Free Company Group Photo" width="359" height="202"></a>
@@ -105,7 +107,9 @@
                 <a class="button-style" href="<?php echo url_for('/roster.php'); ?>">Learn More</a>
               </div>
             </div>
-          </div>
+          </section>
+
+        </article>
 
 <?php
 include(SHARED_PATH . '/public_footer.php');

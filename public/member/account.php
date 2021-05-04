@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div id="main">
+      <main id="main">
         <div id="main-container" class="account-grid">
           <!-- Finds user info -->
           <?php
@@ -54,7 +54,7 @@
             </table>                     
           </div>
         </div>
-      </div>      
+      </main>      
       
 <?php
 include(SHARED_PATH . '/public_footer.php');

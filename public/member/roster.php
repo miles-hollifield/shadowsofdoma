@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div id="main">
+      <main id="main">
         <div id="main-container">
           <table class="background" id="roster-table">
             <tr>
@@ -40,7 +40,7 @@
             <?php } ?>
           </table>
         </div>
-      </div>
+      </main>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');

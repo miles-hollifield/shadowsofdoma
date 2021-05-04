@@ -37,7 +37,7 @@
 
       ?>
 
-      <div id="main">
+      <main id="main">
         <div id="main-container">
 
           <a class="back-link" href="<?php echo url_for('/admin/roster.php'); ?>">&laquo; Back to Roster</a>
@@ -57,7 +57,7 @@
           </div>
 
         </div>
-      </div>
+      </main>
       
 <?php
   include(SHARED_PATH . '/public_footer.php');

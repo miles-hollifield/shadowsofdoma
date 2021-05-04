@@ -17,12 +17,10 @@
   <body>
     <header>
       <div id="masthead">
-        <div id="header-img">
-          <div id="header-title">
-            <a href="index.php"><h1>SHADOWS OF DOMA</h1></a>
-            <a href="index.php"><p>FINAL FANTASY XIV</p></a>
-            <a href="index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
-          </div>
+        <div id="header-title">
+          <a href="index.php"><h1>SHADOWS OF DOMA</h1></a>
+          <a href="index.php"><p>FINAL FANTASY XIV</p></a>
+          <a href="index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
         </div>
       </div>
       <nav id="navbar">
@@ -45,8 +43,7 @@
     <div id="wrapper">
 
       <?php echo display_session_message(); ?>
-      
-            
+        
         <div id="content-wrapper">
           <div id="content-top">
             <div id="content-top-text">

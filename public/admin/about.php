@@ -17,31 +17,31 @@
         </div>
       </div>
       
-      <div id="main">
+      <main id="main">
         <div id="main-container">
-          <div class="section" id="casual">
+          <section class="section" id="casual">
             <img src="<?php echo url_for('/img/final-fantasy-xiv-blade.jpg'); ?>" alt="Character" width="548" height="308">
             <div>
               <h2>Casual Play</h2>
               <p>Do you enjoy experiencing the story of the game? Maybe you love side quests? Or do you just want to get all those spells on your Blue Mage? We do too, and would love to help you along the way!</p>
             </div>
-          </div>
-          <div class="section" id="raiding">
+          </section>
+          <section class="section" id="raiding">
             <div>
               <h2>Raiding</h2>
               <p>We do weekly runs of any fresh 24 person content as an FC! While we don’t have an official team for 8 person content, we do provide a space for you to find like minded people so you can make friends and form your own!</p>
             </div>
             <img src="<?php echo url_for('/img/ff14-raiding.jpg'); ?>" alt="Casual" width="548" height="308">
-          </div>
-          <div class="section" id="roleplay">
+          </section>
+          <section class="section" id="roleplay">
             <img src="<?php echo url_for('/img/ff14-roleplay.png'); ?>" alt="Rolepay" width="548" height="308">
             <div>
               <h2>Roleplay</h2>
               <p>Does your character have a story? We appreciate anyone that likes to feel a little more immersed, and has a story or character they would like to share.  We also try to keep all of our in game FC events as stories your character can experience!</p>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');

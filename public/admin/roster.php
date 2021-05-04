@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div id="main">
+      <main id="main">
         <div id="main-container">
           <a class="action" href="<?php echo url_for('/admin/new.php'); ?>">Add Character</a>
           <table class="background" id="roster-table">
@@ -49,7 +49,7 @@
             <?php } ?>
           </table>
         </div>
-      </div>
+      </main>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');

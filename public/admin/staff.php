@@ -14,7 +14,7 @@
         </div>
       </div>
       
-      <div id="main">
+      <main id="main">
         <div id="main-container">
           <!-------- Guildmaster ------------>
           <div class="staff-heading">
@@ -178,7 +178,7 @@
             </div>
           </div>
         </div>        
-      </div>
+      </main>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');

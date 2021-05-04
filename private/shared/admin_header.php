@@ -11,7 +11,6 @@
     <link href="<?php echo url_for('../public/css/general.css') ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/styles.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/responsive.css') ?>" rel="stylesheet">
-    <link href="<?php echo url_for('../public/css/grid.css'); ?>" rel="stylesheet">
     <link href="<?php echo url_for('../public/css/modal.css'); ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://www.google.com/recaptcha/api.js'></script>

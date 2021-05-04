@@ -18,6 +18,12 @@ body {
   max-width: 1200px;
 }
 
+.section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
 .responsive {
   height: auto;
   max-width: 100%;
@@ -25,15 +31,15 @@ body {
 
 .button-style {
   background-color: #504741;
-  border: 1px solid black;
-  padding: 10px 20px 10px 20px;
-  margin: 20px;
-  text-align: center;
-  min-width: 200px;
-  color: white;
+  border: 1px solid #000;
+  color: #fff;
   cursor: pointer;
-  text-decoration: none;
   font-size: 1vw;
+  margin: 20px;
+  min-width: 200px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .g-recaptcha {
@@ -47,22 +53,22 @@ header {
 }
 
 #masthead {
-  background-color: white;
+  background-color: #fff;
   padding: 5px;
 }
 
 #header-title {
-  background-color: black;
-  text-align: center;
-  padding: 5px;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-size: 2.4vw;
   line-height: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 #header-title a {
+  color: #fff;
   text-decoration: none;
-  color: white;
 }
 
 /* Nav Bar */
@@ -72,14 +78,14 @@ header {
 }
 
 #navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.3vw;
   border-right: 1px solid rgb(27, 27, 27);
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 1.3vw;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #navbar a:hover {
@@ -95,21 +101,21 @@ header {
 }
 
 #navbar input[type=text] {
-  padding: 6px;
-  margin-top: 10px;
-  font-size: 1.5vw;
   border: none;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  padding: 6px;
 }
 
 #navbar .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 10px;
-  margin-right: 16px;
   background: #ddd;
-  font-size: 1.5vw;
   border: none;
   cursor: pointer;
+  float: right;
+  font-size: 1.5vw;
+  margin-right: 16px;
+  margin-top: 10px;
+  padding: 6px 10px;
 }
 
 #navbar .search-container button:hover {
@@ -119,9 +125,9 @@ header {
 /* Top Content */
 
 #content-wrapper {
+  background-color: #fff;
   margin-top: 10px;
   padding: 5px;
-  background-color: white;
 }
 
 #content-top {
@@ -131,7 +137,7 @@ header {
 }
 
 #content-top-text {
-  color: white;
+  color: #fff;
 }
 
 #content-top-text h1 {
@@ -141,9 +147,9 @@ header {
 #content-top-text p {
   font-family: 'Roboto Mono', monospace;
   margin: 10px auto;
-  text-align: left;
   max-width: 70vw;
   padding: 10px;
+  text-align: left;
 }
 
 .center {
@@ -152,15 +158,15 @@ header {
 
 /* Main Page Content */
 #main {
+  background-color: #fff;
   margin-top: 10px;
-  background-color: white;
   padding: 5px;
 }
 
 #main-container {
-  border: 1px solid black;
   background-color: rgb(253, 247, 226);
   background-position: center;
+  border: 1px solid #000;
 }
 
 .background {
@@ -171,18 +177,18 @@ header {
 /* Messages to User */
 #message {
   background-color: #000;
-  color: rgb(44, 221, 44);
   border: 1px solid #000;
+  color: rgb(44, 221, 44);
   margin: 10px auto;
   padding: 10px;
   text-align: center;
 }
 
 .errors {
+  color: rgb(255, 0, 0);
   margin: 0 auto;
-  color: red;
-  text-align: center;
   max-width: 500px;
+  text-align: center;
 }
 
 .errors ul {
@@ -190,17 +196,17 @@ header {
 }
 
 .user-input {
-  padding: 5px;
   margin: 3px;
+  padding: 5px;
 }
 
 /* Footer */
 footer {
   background-color: #3b3632;
   color: #fff;
+  font-size: 1.5vw;
   margin-top: 1rem;
   padding: 1rem;
   text-align: center;
   width: 100%;
-  font-size: 1.5vw;
 }

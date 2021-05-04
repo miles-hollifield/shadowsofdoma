@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div id="main">
+      <main id="main">
         <div id="main-container">
           <div id="search-results">
             <?php
@@ -55,7 +55,7 @@
               ?>
           </div>
         </div>
-      </div>
+      </main>
 
 <?php
   include(SHARED_PATH . '/public_footer.php');

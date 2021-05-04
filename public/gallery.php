@@ -13,13 +13,13 @@
         </div>
       </div>
 
-      <div id="main">
+      <main id="main">
 
         <script src="<?php echo url_for('../public/js/gallery.js'); ?>" defer></script>
 
         <!-------------- Thumbnail Gallery ------------------>
 
-        <div class="background" id="gallery-grid">
+        <section class="background" id="gallery-grid">
           <div id="gallery-grid-container">
             <img id="img1" src="<?php echo url_for('/img/gallery/ff14-group-photo-small.jpg'); ?>" alt="Free Company Group Photo" width="345" height="194">
             <img id="img2" src="<?php echo url_for('/img/gallery/ff14-shadowbringers-small.jpg'); ?>" alt="Free Company Dungeon" width="345" height="194">
@@ -31,7 +31,7 @@
             <img id="img8" src="<?php echo url_for('/img/gallery/ff14-ultima-boss-small.jpg'); ?>" alt="Free Company Ultima Boss" width="345" height="194">
             <img id="img9" src="<?php echo url_for('/img/gallery/ff14-ingame-small.jpg'); ?>" alt="Free Company In-Game Photo" width="345" height="194">
           </div>
-        </div>
+        </section>
 
         <!-------------------- Modal ------------------------>
         
@@ -90,7 +90,7 @@
           </div>
         </div>
 
-      </div>
+      </main>
       
 <?php
 include(SHARED_PATH . '/public_footer.php');
