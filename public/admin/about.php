@@ -30,9 +30,8 @@
             <div>
               <h2>Raiding</h2>
               <p>We do weekly runs of any fresh 24 person content as an FC! While we don’t have an official team for 8 person content, we do provide a space for you to find like minded people so you can make friends and form your own!</p>
-              <p>Bacon ipsum dolor amet hamburger shoulder pig brisket cupim corned beef leberkas turducken chuck bacon ham jowl tenderloin short loin tongue. Leberkas ground round alcatra beef short ribs jowl biltong kielbasa pastrami shank filet mignon cow pork belly sausage. Cow ribeye t-bone sirloin, short loin fatback ground round tri-tip alcatra meatloaf tenderloin venison turducken pig bacon.</p>
             </div>
-            <img src="<?php echo url_for('/img/ff14-casual.png'); ?>" alt="Casual" width="548" height="548">
+            <img src="<?php echo url_for('/img/ff14-raiding.jpg'); ?>" alt="Casual" width="548" height="308">
           </div>
           <div class="section" id="roleplay">
             <img src="<?php echo url_for('/img/ff14-roleplay.png'); ?>" alt="Rolepay" width="548" height="308">
