@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2021 at 05:02 AM
+-- Generation Time: May 04, 2021 at 07:08 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -258,7 +258,7 @@ ALTER TABLE `free_company_rank`
 -- AUTO_INCREMENT for table `game_character`
 --
 ALTER TABLE `game_character`
-  MODIFY `game_character_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `game_character_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `gender`
