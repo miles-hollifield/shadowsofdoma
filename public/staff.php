@@ -16,7 +16,7 @@
       
       <div id="main">
         <div id="main-container">
-          <!-- Guildmaster -->
+          <!-------- Guildmaster ------------>
           <div class="staff-heading">
             <hr>
             <h2>Guildmaster</h2>
@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <!-- Council Members -->
+          <!--------- Council Members -------->
           <div class="staff-heading">
             <hr>
             <h2>Council Members</h2>
@@ -92,7 +92,7 @@
             <img src="<?php echo url_for('/img/staff/ff14-council-3.jpg'); ?>" alt="Lukas Reeves" width="340" height="570">
           </div>
 
-          <!-- Officers -->
+          <!----------- Officers --------------->
           <div class="staff-heading">
             <hr>
             <h2>Officers</h2>

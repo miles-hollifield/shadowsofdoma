@@ -14,7 +14,7 @@
       </div>
 
       <?php
-        $id = $_GET['id'] ?? '1'; // PHP > 7.0
+        $id = $_GET['id'] ?? '1';
         $character = Character::fill_view($id);
       ?>
 

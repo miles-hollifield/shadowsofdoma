@@ -34,8 +34,10 @@
   include('classes/account.class.php');
   include('classes/character.class.php');
 
-  // Autoload class definitions
-
+  /**
+   * Autoload class definitions
+   * @param string $class The class to autoload
+   */
   function my_autoload($class) {
     if ( preg_match('/\A\w+\Z/', $class) ) {
       include 'classes/' . $class . 'class.php';

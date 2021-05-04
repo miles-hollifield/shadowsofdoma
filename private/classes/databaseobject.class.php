@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * DatabaseObject is the parent class that holds most functions used by child classes
+ */
 class DatabaseObject {
 
   static protected $database;
@@ -7,10 +10,17 @@ class DatabaseObject {
   static protected $db_columns = ['user_id', 'user_first_name', 'user_last_name', 'user_email', 'user_name', 'user_hashed_password', 'user_level'];
   public $errors = [];
 
+  /**
+   * Sets up the database
+   */
   static public function set_database($database) {
     self::$database = $database;
   }
 
+  /**
+   * Finds results from sql query and turns into objects
+   * @param string $sql The sql query to search
+   */
   static public function find_by_sql($sql) {
     $result = self::$database->query($sql);
     if(!$result) {
@@ -22,10 +32,13 @@ class DatabaseObject {
     while ($record = $result->fetch(PDO::FETCH_ASSOC)) {
         $object_array[] = static::instantiate($record);
       }
-    //  $result->free();
     return $object_array;
   }
 
+  /**
+   * Finds results based on id search
+   * @param int $id ID number from respective table
+   */
   static public function find_by_id($id) {
     $sql = "SELECT * FROM " . static::$table_name . " ";
     $sql .= "WHERE " . static::$id_name . "=" . self::$database->quote($id);
@@ -37,12 +50,18 @@ class DatabaseObject {
     }
   }
 
+  /**
+   * Finds all data from respective table
+   */
   static public function find_all() {
     $sql = "SELECT * FROM " . static::$table_name;
     return static::find_by_sql($sql);
   }
 
-  // Search Function
+  /**
+   * Search results function
+   * @param string $search User input for search bar
+   */
   static public function search_result($search) {
     $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character ";
     $sql .= "JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id JOIN user ON game_character.user_id = user.user_id ";
@@ -55,7 +74,10 @@ class DatabaseObject {
     }
   }
 
-  // Find by Username Function
+  /**
+   * Finds results based on username
+   * @param string $user_name Username to search for
+   */
   static public function find_by_username($user_name) {
     $sql = "SELECT * FROM " . static::$table_name . " ";
     $sql .= "WHERE user_name=" . self::$database->quote($user_name);
@@ -67,19 +89,26 @@ class DatabaseObject {
     }
   }
 
-  // Find User ID and User Name
+  /**
+   * Finds ID and username from the User table
+   */
   static public function find_id_and_name() {
     $sql = "SELECT user_id, user_name FROM user ";
     return static::find_by_sql($sql);
   }
 
-  // Roster Function
+  /**
+   * Fills the roster table
+   */
   static public function fill_roster() {
     $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character JOIN gender ON game_character.gender_id = gender.gender_id JOIN race ON game_character.race_id = race.race_id JOIN class ON game_character.class_id = class.class_id JOIN free_company_rank ON game_character.free_company_rank_id = free_company_rank.free_company_rank_id ORDER BY game_character.game_character_id";
     return static::find_by_sql($sql);
   }
 
-  // Account Function
+  /**
+   * Gets characters owned by respective account
+   * @param string $user_name Username to search for
+   */
   static public function get_account_characters($user_name) {
     $username = self::$database->quote($user_name);
     $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_type, race.race_type, class.class_type, free_company_rank.free_company_rank_status FROM game_character ";
@@ -88,7 +117,10 @@ class DatabaseObject {
     return static::find_by_sql($sql);
   } 
 
-  // Fill View Function
+  /**
+   * Fills the table on the View page
+   * @param int $id ID from game_character table
+   */
   static public function fill_view($id) {
     $id = self::$database->quote($id);
     $sql = "SELECT game_character_id, game_character.game_character_first_name, game_character.game_character_last_name, gender.gender_id, gender.gender_type, race.race_id, race.race_type, class.class_id, class.class_type, free_company_rank.free_company_rank_id, free_company_rank.free_company_rank_status, user.user_id, user.user_name FROM game_character ";
@@ -102,6 +134,10 @@ class DatabaseObject {
     }
   }
 
+  /**
+   * Creates an instance of record
+   * @param string $record Record to turn into an instance
+   */
   static public function instantiate($record) {
     $object = new static;
     foreach($record as $property => $value) {
@@ -112,6 +148,9 @@ class DatabaseObject {
     return $object;
   }
 
+  /**
+   * Creates new record into respective table
+   */
   public function create() {
     $this->validate();
     if(!empty($this->errors)) { return false; }
@@ -133,6 +172,9 @@ class DatabaseObject {
     return $result;    
   }
 
+  /**
+   * Updates the respective record
+   */
   public function update() {
     $this->validate();
     if(!empty($this->errors)) { return false; }
@@ -155,6 +197,9 @@ class DatabaseObject {
     return $result;
   }
 
+  /**
+   * Saves respective record
+   */
   public function save() {
     // A new record will not have an ID yet
     $id = static::$id_name;
@@ -165,6 +210,10 @@ class DatabaseObject {
     }
   }
 
+  /**
+   * Merges attributes with object arguments
+   * @param array $args=[] Arguments from object array
+   */
   public function merge_attributes($args=[]) {
     foreach($args as $key => $value) {
         if(property_exists($this, $key) && !is_null($value)) {
@@ -173,16 +222,20 @@ class DatabaseObject {
     }
   }
 
-  // Properties which have database columns excluding ID
+  /**
+   * Properties which have database columns
+   */
   public function attributes() {
     $attributes = [];
     foreach(static::$db_columns as $column) {
-        //if( $column == static::$id_name ) { continue; }
         $attributes[$column] = $this->$column;
     }
     return $attributes;
   }
 
+  /**
+   * Sanitizes attributes
+   */
   protected function sanitized_attributes() {
     $sanitized = [];
     foreach($this->attributes() as $key => $value) {
@@ -191,6 +244,9 @@ class DatabaseObject {
     return $sanitized;
   }
 
+  /**
+   * Deletes respective record
+   */
   public function delete() {    
     $id = static::$id_name;
     $sql = "DELETE FROM " . static::$table_name . " ";
@@ -209,6 +265,9 @@ class DatabaseObject {
     // calling $user->delete().
   }
 
+  /**
+   * Validates for errors
+   */
   protected function validate() {
     $this->errors = [];
 

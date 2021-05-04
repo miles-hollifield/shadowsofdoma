@@ -1,12 +1,8 @@
 <?php
 
-function require_public() {
-  global $session;
-  if(!isset($session->user_level)) {
-    // Do nothing
-  }
-}
-
+/**
+ * Requires the user to be logged in
+ */
 function require_login() {
   global $session;
   if($session->user_level !== 'm') {
@@ -16,6 +12,9 @@ function require_login() {
   }
 }
 
+/**
+ * Requires the user to be an admin
+ */
 function require_admin() {
   global $session;
   if($session->user_level !== 'a') {
@@ -25,6 +24,10 @@ function require_admin() {
   }
 }
 
+/**
+ * Displays errors
+ * @param array $errors=array() The errors from an array
+ */
 function display_errors($errors=array()) {
   $output = '';
   if(!empty($errors)) {
@@ -40,6 +43,9 @@ function display_errors($errors=array()) {
   return $output;
 }
 
+/**
+ * Displays session message
+ */
 function display_session_message() {
   global $session;
   $msg = $session->message();

@@ -15,6 +15,7 @@
 
       <div id="main">
         <div id="main-container" class="account-grid">
+          <!-- Finds user info -->
           <?php
             $user = $_SESSION['user_name'];
             $account = Account::find_by_username($user); 
@@ -37,6 +38,7 @@
                 <th>Free Company Rank</th>
               </tr> 
 
+              <!-- Gets characters owned by certain account -->
               <?php $acc_chars = Character::get_account_characters($user); ?>
 
               <?php foreach($acc_chars as $acc_char) { ?>

@@ -25,6 +25,7 @@
               <th>Free Company Rank</th>
             </tr>
 
+            <!-- Fills Roster table -->
             <?php $characters = Character::fill_roster(); ?>
 
             <?php foreach($characters as $character) { ?>

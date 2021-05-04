@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Admin class is a child of DatabaseObject class that is used for
+ * user validation, creating, and updating user records
+ */
 class Admin extends DatabaseObject {
 
   static protected $table_name = 'user';
@@ -17,6 +21,10 @@ class Admin extends DatabaseObject {
   public $confirm_password;
   protected $password_required = true;
 
+  /**
+   * Construct arguments function
+   * @param array $args=[] Object array of public members from User table
+   */  
   public function __construct($args=[]) {
     $this->user_first_name = $args['user_first_name'] ?? '';
     $this->user_last_name = $args['user_last_name'] ?? '';
@@ -27,19 +35,32 @@ class Admin extends DatabaseObject {
     $this->confirm_password = $args['confirm_password'] ?? '';
   }
 
+  /**
+   * Sets a hashed password for user
+   */
   protected function set_hashed_password() {
     $this->user_hashed_password = password_hash($this->password, PASSWORD_BCRYPT);
   }
 
+  /**
+   * Verifies user password
+   * @param string $password Password user sets
+   */
   public function verify_password($password){
     return password_verify($password, $this->user_hashed_password);
   }
 
+  /**
+   * Calls create parent function
+   */
   public function create() {
     $this->set_hashed_password();
     return parent::create();
   }
 
+  /**
+   * If password validates, then calls update parent function
+   */
   public function update() {
     if($this->password != '') {
       // validate password
@@ -51,6 +72,9 @@ class Admin extends DatabaseObject {
     return parent::update();
   }
 
+  /**
+   * Validates user input
+   */
   protected function validate() {
     $this->errors = [];
   

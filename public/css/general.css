@@ -6,7 +6,6 @@
 }
 
 html {
-  /* font: 1.5vw 'Roboto Mono', monospace; */
   font: 1.5vw 'PT Serif', serif;
 }
 
@@ -52,23 +51,13 @@ header {
   padding: 5px;
 }
 
-#header-img {
-  background-color: rgb(10, 9, 10);
-}
-
 #header-title {
-  position: relative;
-  display: block;
+  background-color: black;
   text-align: center;
   padding: 5px;
   color: white;
   font-size: 2.4vw;
   line-height: 5px;
-  margin-top: 20px;
-}
-
-#header-img img {
-  margin-top: 20px;
 }
 
 #header-title a {
@@ -76,14 +65,7 @@ header {
   color: white;
 }
 
-header img {
-  display: block;
-  margin: auto;
-  padding: 5px;
-}
-
 /* Nav Bar */
-
 #navbar {
   background-color: #3d3834;
   overflow: hidden;

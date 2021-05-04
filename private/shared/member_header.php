@@ -19,14 +19,10 @@
   <body>
     <header>
       <div id="masthead">
-        <div id="header-img">
-          <a href="index.php"><img src="<?php echo url_for('img/ff14-guild-crest.png'); ?>" alt="Crest" width="150" height="155"></a>
-          <div id="header-title">
-            <a href="index.php"><h1>SHADOWS OF DOMA</h1></a>
-            <a href="index.php"><p>FINAL FANTASY XIV</p></a>
-            <a href="index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
-          </div>
-          <a href="index.php"><img src="<?php echo url_for('img/ff14-guild-crest.png'); ?>" alt="Crest" width="150" height="155"></a>
+        <div id="header-title">
+          <a href="index.php"><h1>SHADOWS OF DOMA</h1></a>
+          <a href="index.php"><p>FINAL FANTASY XIV</p></a>
+          <a href="index.php"><p>FREE COMPANY/GUILD WEBSITE</p></a>
         </div>
       </div>
       <nav id="navbar">
@@ -47,5 +43,5 @@
     </header>
     <div id="wrapper">
 
-    <?php echo display_session_message(); ?>
-
+      <?php echo display_session_message(); ?>
+      

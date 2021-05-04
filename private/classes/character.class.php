@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Character class is a child of Account class that is used to build
+ * the Roster table, View page, Search table, and Account table
+ */
 class Character extends Account {
     
     static protected $table_name = 'game_character';
@@ -32,6 +36,9 @@ class Character extends Account {
     public $user_id;
     public $user_name;
 
+    /**
+     * Free Company Rank Options constant
+     */
     public const FREE_COMPANY_RANK_OPTIONS = [
         1 => "Recruit",
         2 => "Member",
@@ -41,6 +48,9 @@ class Character extends Account {
         6 => "Guildmaster"
     ];
 
+    /**
+     * Race Type Options constant
+     */
     public const RACE_TYPE_OPTIONS = [
         1 => "Elezen",
         2 => "Hyur",
@@ -52,6 +62,9 @@ class Character extends Account {
         8 => "Viera"
     ];
 
+    /**
+     * Class Type Options Constant
+     */
     public const CLASS_TYPE_OPTIONS = [
         1 => "Paladin",
         2 => "Warrior",
@@ -73,11 +86,18 @@ class Character extends Account {
         18 => "Blue Mage"
     ];
 
+    /**
+     * Gender Type constant
+     */
     public const GENDER_TYPE_OPTIONS = [
         1 => "M",
         2 => "F"
     ];
 
+    /**
+     * Construct arguments function
+     * @param array $args=[] Object array of public members for Characters table
+     */
     public function __construct($args=[]) {
         $this->game_character_id = $args['game_character_id'] ?? '';
         $this->game_character_first_name = $args['game_character_first_name'] ?? '';
