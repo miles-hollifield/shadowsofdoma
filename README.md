@@ -1,4 +1,4 @@
-# shadowsofdoma
+## General Info
 WEB289 Project ABTECH
 This is the Capstone Project for Asheville-Buncombe Technical Community College for my Software and Web Development degree.
 It is a database-driven website for a "guild" of players for the popular online video game Final Fantasy 14.
