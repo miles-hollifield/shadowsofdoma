@@ -10,5 +10,5 @@ Admins to the site are able to delete, edit, and create new characters.
 https://www.shadowsofdoma.com<br>
 NOTE:<br>
 A bug occurs when following the link above and attempting to view the Roster page and attempting to log in.<br>
-Instead of clicking the link above, manually type out the URL in your browswer, and it should work just fine.<br>
+Instead of clicking the link above, manually type out the URL in your browser, and it should work just fine.<br>
 Will fix in a future update.
