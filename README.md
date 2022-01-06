@@ -7,7 +7,7 @@ Users on the site are able to search for a guildmate using the search bar locate
 Admins to the site are able to delete, edit, and create new characters.
 
 ## Link to Website
-[https://www.shadowsofdoma.com]<br>
+https://www.shadowsofdoma.com<br>
 NOTE:<br>
 A bug occurs when following the link above and attempting to view the Roster page and attempting to log in.<br>
 Instead of clicking the link above, manually type out the URL in your browswer, and it should work just fine.<br>
