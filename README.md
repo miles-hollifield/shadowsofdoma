@@ -7,4 +7,4 @@ Users on the site are able to search for a guildmate using the search bar locate
 Admins to the site are able to delete, edit, and create new characters.
 
 ## Link to Website
-http://www.shadowsofdoma.com
+https://www.shadowsofdoma.com
